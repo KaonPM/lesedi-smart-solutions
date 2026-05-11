@@ -104,7 +104,13 @@ export default function Home() {
               manage staff records, and keep workforce information organised.
             </p>
 
-            <a href="#">View WageFlow →</a>
+            <a
+              href="https://wageflow.lesedismartsolutions.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View WageFlow →
+            </a>
           </article>
 
           <article className="card future">
