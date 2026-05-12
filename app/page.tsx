@@ -73,45 +73,57 @@ export default function Home() {
 
         <div className="cards">
           <article className="card daily">
-            <div className="cardTop">
-              <div className="icon flower">🌼</div>
-              <small>Live Solution</small>
-            </div>
+  <div className="cardTop">
+    <Image
+      src="/dailybloom-logo.png"
+      alt="DailyBloom logo"
+      width={230}
+      height={80}
+      className="productLogo dailyLogo"
+    />
+    <small>Live Solution</small>
+  </div>
 
-            <h3 className="dailyBloom">
-              <span>D</span><span>a</span><span>i</span><span>l</span><span>y</span><span>B</span><span>l</span><span>o</span><span>o</span><span>m</span>
-            </h3>
+  <p>
+    DailyBloom helps preschools manage learners, attendance, events,
+    daily summaries, communication, and school operations from one
+    clean platform.
+  </p>
 
-            <p>
-              DailyBloom helps preschools manage learners, attendance, events,
-              daily summaries, communication, and school operations from one
-              clean platform.
-            </p>
+  <a
+    href="https://www.dailybloom.co.za/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View DailyBloom →
+  </a>
+</article>
 
-            <a href="#">View DailyBloom →</a>
-          </article>
+<article className="card wage">
+  <div className="cardTop">
+    <Image
+      src="/wageflow-logo.png"
+      alt="WageFlow logo"
+      width={230}
+      height={80}
+      className="productLogo wageLogo"
+    />
+    <small>Live Solution</small>
+  </div>
 
-          <article className="card wage">
-            <div className="cardTop">
-              <div className="icon payroll">🧾</div>
-              <small>Live Solution</small>
-            </div>
+  <p>
+    WageFlow helps small businesses calculate pay, generate payslips,
+    manage staff records, and keep workforce information organised.
+  </p>
 
-            <h3>WageFlow</h3>
-
-            <p>
-              WageFlow helps small businesses calculate pay, generate payslips,
-              manage staff records, and keep workforce information organised.
-            </p>
-
-            <a
-              href="https://wageflow.lesedismartsolutions.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View WageFlow →
-            </a>
-          </article>
+  <a
+    href="https://wageflow.lesedismartsolutions.co.za/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View WageFlow →
+  </a>
+</article>
 
           <article className="card future">
             <div className="cardTop">

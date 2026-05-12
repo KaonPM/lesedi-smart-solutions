@@ -504,3 +504,22 @@ button{
     text-align:center;
   }
 }
+.productLogo {
+  width: 230px;
+  height: 80px;
+  object-fit: contain;
+  object-position: left center;
+  display: block;
+}
+
+.cardTop {
+  align-items: flex-start;
+  gap: 14px;
+}
+
+@media (max-width: 768px) {
+  .productLogo {
+    width: 200px;
+    height: 70px;
+  }
+}
