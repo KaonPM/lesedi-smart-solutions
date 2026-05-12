@@ -76,10 +76,10 @@ export default function Home() {
   <div className="cardTop">
     <Image
       src="/dailybloom-logo.png"
-      alt="DailyBloom logo"
+      alt="DailyBloom"
       width={230}
       height={80}
-      className="productLogo dailyLogo"
+      className="productLogo"
     />
     <small>Live Solution</small>
   </div>
