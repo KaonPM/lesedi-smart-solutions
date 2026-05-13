@@ -86,7 +86,7 @@ export default function Home() {
 
   <p>
     DailyBloom helps preschools manage learners, attendance, events,
-    daily summaries, communication, and school operations from one
+    daily summaries, communication and school operations from one
     clean platform.
   </p>
 
@@ -113,7 +113,7 @@ export default function Home() {
 
   <p>
     WageFlow helps small businesses calculate pay, generate payslips,
-    manage staff records, and keep workforce information organised.
+    manage staff records and keep workforce information organised.
   </p>
 
   <a
@@ -135,7 +135,7 @@ export default function Home() {
 
             <p>
               More practical tools are being developed for education, business
-              administration, compliance support, payroll, and everyday workflows.
+              administration, compliance support, payroll and everyday workflows.
             </p>
 
             <a href="#contact">Learn More →</a>
