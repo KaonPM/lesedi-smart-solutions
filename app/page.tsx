@@ -35,8 +35,8 @@ export default function Home() {
 
           <p>
             Lesedi Smart Solutions builds practical digital products that help
-            schools, small businesses, and growing organisations work with
-            better structure, cleaner records, and less admin pressure.
+            schools, small businesses and growing organisations work with
+            better structure, cleaner records and less admin pressure.
           </p>
 
           <div className="heroActions">
@@ -209,11 +209,27 @@ export default function Home() {
         </nav>
 
         <div className="socials">
-          <span>f</span>
-          <span>in</span>
-          <span>✉</span>
+        <a
+         href="https://www.facebook.com/share/1E35cKXqUt/?mibextid=wwXIfr"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
+        <span>f</span>
+        </a>
+
+        <a
+         href="https://www.linkedin.com/company/lesedi-smart-solutions"
+         target="_blank"
+         rel="noopener noreferrer"
+        >
+        <span>in</span>
+        </a>
+
+        <a href="mailto:info@lesedismartsolutions.co.za">
+        <span>✉</span>
+        </a>
         </div>
-      </footer>
+        </footer>
 
       <div className="legalBar">
         <p>Business Registration Number: 2026/315790/07</p>
