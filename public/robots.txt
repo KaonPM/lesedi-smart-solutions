@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://lesedismartsolutions.co.za
+
+# Sitemaps
+Sitemap: https://lesedismartsolutions.co.za/sitemap.xml
