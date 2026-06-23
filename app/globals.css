@@ -523,3 +523,125 @@ button{
     height: 70px;
   }
 }
+.webHeading {
+  margin-bottom: 20px;
+}
+
+.webHeading h3 {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.05;
+}
+
+.webHeading h3 span {
+  background: linear-gradient(
+    135deg,
+    #00a8cc 0%,
+    #2f80ed 45%,
+    #7b61ff 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  position: relative;
+}
+
+/* subtle futuristic glow */
+.webHeading h3 span::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 70%;
+  height: 3px;
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #00a8cc,
+    #7b61ff
+  );
+
+  opacity: 0.4;
+}
+.webCard {
+
+  position: relative;
+
+  overflow: hidden;
+
+}
+
+
+
+.webCard::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: -100px;
+
+  right: -100px;
+
+  width: 220px;
+
+  height: 220px;
+
+  border-radius: 50%;
+
+  background: rgba(0,168,204,0.08);
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+.webTags {
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin: 24px 0;
+
+}
+
+
+
+.webTags span {
+
+  font-size: 13px;
+
+  padding: 8px 14px;
+
+  border-radius: 999px;
+
+  background: rgba(0,168,204,0.08);
+
+  color: #4d6b8a;
+
+  font-weight: 500;
+
+}

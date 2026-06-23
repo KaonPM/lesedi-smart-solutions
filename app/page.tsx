@@ -131,15 +131,22 @@ export default function Home() {
     <small>Live Service</small>
   </div>
 
-  <h3>Website & Digital Solutions</h3>
-
+  <div className="webHeading">
+  <h3>
+    <span>Website & Digital Solutions</span>
+  </h3>
+</div>
   <p>
-    Struggling with low online visibility? We build modern websites
-    and tailored digital solutions that improve customer experience,
-    generate enquiries, and drive business growth. Check out our
-    latest website transformation project and see how we helped turn
-    a business website into a tool for growth.
+    We help businesses improve online visibility, attract customers
+    and generate enquiries through modern websites and tailored
+    digital solutions.
   </p>
+
+  <div className="cardFeatures">
+    <span>✓ Business Websites</span>
+    <span>✓ Custom Platforms</span>
+    <span>✓ Lead Generation</span>
+  </div>
 
   <a
     href="https://www.polokotombstones.co.za/"
