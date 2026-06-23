@@ -34,7 +34,7 @@ export default function Home() {
           </h1>
 
           <p>
-            Lesedi Smart Solutions builds practical digital products that help
+            Lesedi Smart Solutions builds practical digital solutions that can help
             schools, small businesses and growing organisations work with
             better structure, cleaner records and less admin pressure.
           </p>
@@ -67,7 +67,7 @@ export default function Home() {
         <div className="sectionIntro">
           <p className="dotLabel">Our Solutions</p>
           <h2>
-            Products built to make everyday work <span>easier.</span>
+            Solutions built to make everyday work <span>easier.</span>
           </h2>
         </div>
 
@@ -125,21 +125,30 @@ export default function Home() {
   </a>
 </article>
 
-          <article className="card future">
-            <div className="cardTop">
-              <div className="icon rocket">🚀</div>
-              <small>Coming Soon</small>
-            </div>
+        <article className="card future">
+  <div className="cardTop">
+    <div className="icon rocket">🌐</div>
+    <small>Live Service</small>
+  </div>
 
-            <h3>More Solutions</h3>
+  <h3>Website & Digital Solutions</h3>
 
-            <p>
-              More practical tools are being developed for education, business
-              administration, compliance support, payroll and everyday workflows.
-            </p>
+  <p>
+    Struggling with low online visibility? We build modern websites
+    and tailored digital solutions that improve customer experience,
+    generate enquiries, and drive business growth. Check out our
+    latest website transformation project and see how we helped turn
+    a business website into a tool for growth.
+  </p>
 
-            <a href="#contact">Learn More →</a>
-          </article>
+  <a
+    href="https://www.polokotombstones.co.za/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View Latest Project →
+  </a>
+</article>
         </div>
       </section>
 
@@ -153,7 +162,7 @@ export default function Home() {
           </p>
 
           <p>
-            Our products are designed for real people and real organisations
+            Our solutions are designed for real people and real organisations
             that need better ways to manage daily work.
           </p>
         </div>
