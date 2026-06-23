@@ -138,7 +138,7 @@ export default function Home() {
 </div>
   <p>
     We help businesses improve online visibility, attract customers
-    and generate enquiries through modern websites and tailored
+    and generate enquiries and leads through modern websites and tailored
     digital solutions.
   </p>
 
