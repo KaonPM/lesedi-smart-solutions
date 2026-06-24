@@ -21,12 +21,16 @@ export default function Home() {
           <a href="#contact">Contact</a>
         </nav>
 
-        <a href="#contact" className="navBtn">💬 Get in Touch</a>
+        <a href="#contact" className="navBtn">
+          💬 Get in Touch
+        </a>
       </header>
 
       <section className="hero">
         <div className="heroText">
-          <p className="badge">Simple Solutions for Real Problems</p>
+          <p className="badge">
+            Simple Solutions for Real Problems
+          </p>
 
           <h1>
             Smart solutions <br />
@@ -34,14 +38,26 @@ export default function Home() {
           </h1>
 
           <p>
-            Lesedi Smart Solutions builds practical digital solutions that can help
-            schools, small businesses and growing organisations work with
-            better structure, cleaner records and less admin pressure.
+            Lesedi Smart Solutions builds practical digital
+            solutions that help schools, small businesses and
+            growing organisations work with better structure,
+            cleaner records and less admin pressure.
           </p>
 
           <div className="heroActions">
-            <a href="#solutions" className="primaryBtn">Explore Solutions →</a>
-            <a href="#about" className="secondaryBtn">About Us</a>
+            <a
+              href="#solutions"
+              className="primaryBtn"
+            >
+              Explore Solutions →
+            </a>
+
+            <a
+              href="#about"
+              className="secondaryBtn"
+            >
+              About Us
+            </a>
           </div>
         </div>
 
@@ -57,136 +73,238 @@ export default function Home() {
       </section>
 
       <section className="trustStrip">
-        <div><span>⚙️</span><strong>Practical Solutions</strong><p>Built for everyday use</p></div>
-        <div><span>🎯</span><strong>Real Impact</strong><p>Solve what matters</p></div>
-        <div><span>🇿🇦</span><strong>Local Focus</strong><p>South African solutions</p></div>
-        <div><span>🚀</span><strong>Future Driven</strong><p>More coming soon</p></div>
+        <div>
+          <span>⚙️</span>
+          <strong>Practical Solutions</strong>
+          <p>Built for everyday use</p>
+        </div>
+
+        <div>
+          <span>🎯</span>
+          <strong>Real Impact</strong>
+          <p>Solve what matters</p>
+        </div>
+
+        <div>
+          <span>🇿🇦</span>
+          <strong>Local Focus</strong>
+          <p>South African solutions</p>
+        </div>
+
+        <div>
+          <span>🚀</span>
+          <strong>Future Driven</strong>
+          <p>More coming soon</p>
+        </div>
       </section>
 
-      <section id="solutions" className="solutions">
+      <section
+        id="solutions"
+        className="solutions"
+      >
         <div className="sectionIntro">
-          <p className="dotLabel">Our Solutions</p>
+          <p className="dotLabel">
+            Our Solutions
+          </p>
+
           <h2>
-            Solutions built to make everyday work <span>easier.</span>
+            Solutions built to make everyday work
+            <span> easier.</span>
           </h2>
         </div>
 
         <div className="cards">
+
+          {/* WEBSITE FIRST */}
+
+          <article className="card future webCard">
+
+            <div className="cardTop">
+              <small>Live Service</small>
+            </div>
+
+            <div className="webHeading">
+              <h3>
+                <span>
+                  Website & Digital Solutions
+                </span>
+              </h3>
+            </div>
+
+            <div className="deviceShowcase">
+
+              <div className="laptop">
+
+                <div className="screenContent">
+
+                  <h4>
+                    Grow your business online
+                  </h4>
+
+                  <p>
+                    Modern websites and digital
+                    solutions designed to improve
+                    visibility, generate enquiries
+                    and help businesses grow.
+                  </p>
+
+                  <div className="miniButton">
+                    Business Growth
+                  </div>
+
+                </div>
+
+              </div>
+
+              <div className="phone">
+
+                <div className="phoneContent">
+
+                  <h5>✓ Websites</h5>
+                  <h5>✓ Platforms</h5>
+                  <h5>✓ Leads</h5>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <a
+              href="https://www.polokotombstones.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Latest Project →
+            </a>
+
+          </article>
+
+
+          {/* DAILYBLOOM SECOND */}
+
           <article className="card daily">
-  <div className="cardTop">
-    <Image
-      src="/dailybloom-logo.png"
-      alt="DailyBloom"
-      width={230}
-      height={80}
-      className="productLogo"
-    />
-    <small>Live Solution</small>
-  </div>
 
-  <p>
-    DailyBloom helps preschools manage learners, attendance, events,
-    daily summaries, communication and school operations from one
-    clean platform.
-  </p>
+            <div className="cardTop">
 
-  <a
-    href="https://www.dailybloom.co.za/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View DailyBloom →
-  </a>
-</article>
+              <Image
+                src="/dailybloom-logo.png"
+                alt="DailyBloom"
+                width={230}
+                height={80}
+                className="productLogo"
+              />
 
-<article className="card wage">
-  <div className="cardTop">
-    <Image
-      src="/wageflow-logo.png"
-      alt="WageFlow logo"
-      width={230}
-      height={80}
-      className="productLogo wageLogo"
-    />
-    <small>Live Solution</small>
-  </div>
+              <small>
+                Live Solution
+              </small>
 
-  <p>
-    WageFlow helps small businesses calculate pay, generate payslips,
-    manage staff records and keep workforce information organised.
-  </p>
+            </div>
 
-  <a
-    href="https://wageflow.lesedismartsolutions.co.za/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View WageFlow →
-  </a>
-</article>
+            <p>
+              DailyBloom helps preschools manage
+              learners, attendance, events,
+              daily summaries, communication and
+              school operations from one clean
+              platform.
+            </p>
 
-        <article className="card future">
-  <div className="cardTop">
-    <div className="icon rocket">🌐</div>
-    <small>Live Service</small>
-  </div>
+            <a
+              href="https://www.dailybloom.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View DailyBloom →
+            </a>
 
-  <div className="webHeading">
-  <h3>
-    <span>Website & Digital Solutions</span>
-  </h3>
-</div>
-  <p>
-    We help businesses improve online visibility, attract customers
-    and generate enquiries and leads through modern websites and tailored
-    digital solutions.
-  </p>
+          </article>
 
-  <div className="cardFeatures">
-    <span>✓ Business Websites</span>
-    <span>✓ Custom Platforms</span>
-    <span>✓ Lead Generation</span>
-  </div>
 
-  <a
-    href="https://www.polokotombstones.co.za/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    View Latest Project →
-  </a>
-</article>
+          {/* WAGEFLOW LAST */}
+
+          <article className="card wage">
+
+            <div className="cardTop">
+
+              <Image
+                src="/wageflow-logo.png"
+                alt="WageFlow"
+                width={230}
+                height={80}
+                className="productLogo wageLogo"
+              />
+
+              <small>
+                Live Solution
+              </small>
+
+            </div>
+
+            <p>
+              WageFlow helps small businesses
+              calculate pay, generate payslips,
+              manage staff records and keep
+              workforce information organised.
+            </p>
+
+            <a
+              href="https://wageflow.lesedismartsolutions.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View WageFlow →
+            </a>
+
+          </article>
+
         </div>
       </section>
 
       <section className="bottomGrid">
-        <div id="about" className="panel aboutPanel">
+
+        <div
+          id="about"
+          className="panel aboutPanel"
+        >
+
           <h3>About Us</h3>
 
           <p>
-            Lesedi Smart Solutions is a South African digital solutions company
-            focused on building simple, useful and affordable technology.
+            Lesedi Smart Solutions is a South African
+            digital solutions company focused on
+            building simple, useful and affordable
+            technology.
           </p>
 
           <p>
-            Our solutions are designed for real people and real organisations
-            that need better ways to manage daily work.
+            Our solutions are designed for real people
+            and real organisations that need better
+            ways to manage daily work.
           </p>
+
         </div>
 
-        <div id="contact" className="panel contactPanel">
+        <div
+          id="contact"
+          className="panel contactPanel"
+        >
+
           <h3>Get in Touch</h3>
 
           <div className="contactItem">
             <span>✉️</span>
+
             <div>
               <strong>Email</strong>
-              <p>info@lesedismartsolutions.co.za</p>
+              <p>
+                info@lesedismartsolutions.co.za
+              </p>
             </div>
           </div>
 
           <div className="contactItem">
             <span>📞</span>
+
             <div>
               <strong>Phone</strong>
               <p>076 361 6044</p>
@@ -195,20 +313,27 @@ export default function Home() {
 
           <div className="contactItem">
             <span>💬</span>
+
             <div>
               <strong>WhatsApp</strong>
               <p>076 361 6044</p>
             </div>
           </div>
+
         </div>
 
         <div className="panel formPanel">
+
           <h3>Send us a Message</h3>
+
           <ContactForm />
+
         </div>
+
       </section>
 
       <footer className="footer">
+
         <div className="footerLogo">
           <Image
             src="/lesedi-logo.png"
@@ -218,40 +343,27 @@ export default function Home() {
           />
         </div>
 
-        <nav>
-          <a href="#solutions">Solutions</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
-        </nav>
-
-        <div className="socials">
-        <a
-         href="https://www.facebook.com/share/1E35cKXqUt/?mibextid=wwXIfr"
-         target="_blank"
-         rel="noopener noreferrer"
-        >
-        <span>f</span>
-        </a>
-
-        <a
-         href="https://www.linkedin.com/company/lesedi-smart-solutions"
-         target="_blank"
-         rel="noopener noreferrer"
-        >
-        <span>in</span>
-        </a>
-
-        <a href="mailto:info@lesedismartsolutions.co.za">
-        <span>✉</span>
-        </a>
-        </div>
-        </footer>
+      </footer>
 
       <div className="legalBar">
-        <p>Business Registration Number: 2026/315790/07</p>
-        <p>Information Regulator Registration Number: 2026-010141</p>
-        <p>© 2026 Lesedi Smart Solutions. All rights reserved.</p>
+
+        <p>
+          Business Registration Number:
+          2026/315790/07
+        </p>
+
+        <p>
+          Information Regulator Registration Number:
+          2026-010141
+        </p>
+
+        <p>
+          © 2026 Lesedi Smart Solutions.
+          All rights reserved.
+        </p>
+
       </div>
+
     </main>
   );
 }

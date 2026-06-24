@@ -504,144 +504,212 @@ button{
     text-align:center;
   }
 }
-.productLogo {
-  width: 230px;
-  height: 80px;
-  object-fit: contain;
-  object-position: left center;
-  display: block;
+.productLogo{
+  width:230px;
+  height:80px;
+  object-fit:contain;
+  object-position:left center;
+  display:block;
 }
 
-.cardTop {
-  align-items: flex-start;
-  gap: 14px;
+.cardTop{
+  align-items:flex-start;
+  gap:14px;
 }
 
-@media (max-width: 768px) {
-  .productLogo {
-    width: 200px;
-    height: 70px;
-  }
-}
-.webHeading {
-  margin-bottom: 20px;
+/* Make all cards same height */
+.card{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
+  min-height:500px;
 }
 
-.webHeading h3 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: 800;
-  line-height: 1.05;
+/* WEBSITE CARD */
+
+.webCard{
+  position:relative;
+  overflow:hidden;
 }
 
-.webHeading h3 span {
-  background: linear-gradient(
+.webCard::before{
+  content:"";
+  position:absolute;
+  width:260px;
+  height:260px;
+  right:-120px;
+  top:-120px;
+  border-radius:50%;
+  background:rgba(0,168,204,.08);
+}
+
+/* Heading */
+
+.webHeading{
+  margin-bottom:20px;
+}
+
+.webHeading h3{
+  margin:0;
+  font-size:2rem;
+  line-height:1.1;
+  font-weight:800;
+}
+
+.webHeading span{
+  background:linear-gradient(
     135deg,
-    #00a8cc 0%,
-    #2f80ed 45%,
-    #7b61ff 100%
-  );
-
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-
-  position: relative;
-}
-
-/* subtle futuristic glow */
-.webHeading h3 span::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -8px;
-  width: 70%;
-  height: 3px;
-  border-radius: 999px;
-  background: linear-gradient(
-    90deg,
     #00a8cc,
+    #2f80ed,
     #7b61ff
   );
 
-  opacity: 0.4;
-}
-.webCard {
-
-  position: relative;
-
-  overflow: hidden;
-
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
 }
 
+/* Laptop + Phone */
 
+.deviceShowcase{
+  position:relative;
+  margin:20px 0;
+  height:220px;
+}
 
-.webCard::before {
+.laptop{
+  width:100%;
+  height:180px;
+  background:#182434;
+  border-radius:18px;
+  padding:12px;
+  position:relative;
+  z-index:1;
+}
 
-  content: "";
+.screenContent{
+  background:#fff;
+  border-radius:12px;
+  height:100%;
+  padding:18px;
+}
 
-  position: absolute;
+.screenContent h4{
+  font-size:18px;
+  margin-bottom:12px;
+  color:#12304a;
+}
 
-  top: -100px;
+.screenContent p{
+  font-size:13px;
+  line-height:1.6;
+  color:#5f7788;
+}
 
-  right: -100px;
+.miniButton{
+  margin-top:12px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:8px 14px;
+  border-radius:999px;
+  background:linear-gradient(
+    90deg,
+    #0aa6bf,
+    #2f80ed
+  );
 
-  width: 220px;
+  color:#fff;
+  font-size:12px;
+  font-weight:700;
+}
 
-  height: 220px;
+.phone{
+  width:90px;
+  height:160px;
+  position:absolute;
+  bottom:-10px;
+  right:-8px;
+  background:#111827;
+  border-radius:22px;
+  padding:8px;
+  border:4px solid white;
+  z-index:2;
+}
 
-  border-radius: 50%;
+.phoneContent{
+  background:white;
+  height:100%;
+  border-radius:14px;
+  padding:12px;
+}
 
-  background: rgba(0,168,204,0.08);
+.phoneContent h5{
+  font-size:11px;
+  margin:12px 0;
+  color:#0aa6bf;
+}
+
+/* DailyBloom + WageFlow */
+
+.daily,
+.wage{
+  display:flex;
+  flex-direction:column;
+}
+
+.daily a,
+.wage a,
+.webCard a{
+  margin-top:auto;
+}
+
+/* TABLET */
+
+@media (max-width:980px){
+
+  .cards{
+    grid-template-columns:1fr;
+  }
+
+  .card{
+    min-height:auto;
+  }
 
 }
 
+/* MOBILE */
 
+@media (max-width:768px){
 
+  .productLogo{
+    width:200px;
+    height:70px;
+  }
 
+  .webHeading h3{
+    font-size:1.6rem;
+  }
 
+  .deviceShowcase{
+    height:200px;
+  }
 
+  .laptop{
+    height:160px;
+  }
 
+  .phone{
+    width:75px;
+    height:135px;
+  }
 
+  .screenContent h4{
+    font-size:15px;
+  }
 
-
-
-
-
-
-
-  
-
-
-
-
-
-.webTags {
-
-  display: flex;
-
-  flex-wrap: wrap;
-
-  gap: 10px;
-
-  margin: 24px 0;
-
-}
-
-
-
-.webTags span {
-
-  font-size: 13px;
-
-  padding: 8px 14px;
-
-  border-radius: 999px;
-
-  background: rgba(0,168,204,0.08);
-
-  color: #4d6b8a;
-
-  font-weight: 500;
+  .screenContent p{
+    font-size:12px;
+  }
 
 }
