@@ -28,9 +28,7 @@ export default function Home() {
 
       <section className="hero">
         <div className="heroText">
-          <p className="badge">
-            Simple Solutions for Real Problems
-          </p>
+          <p className="badge">Simple Solutions for Real Problems</p>
 
           <h1>
             Smart solutions <br />
@@ -38,24 +36,17 @@ export default function Home() {
           </h1>
 
           <p>
-            Lesedi Smart Solutions builds practical digital
-            solutions that help schools, small businesses and
-            growing organisations work with better structure,
-            cleaner records and less admin pressure.
+            Lesedi Smart Solutions builds practical digital solutions that help
+            schools, small businesses and growing organisations work with better
+            structure, cleaner records and less admin pressure.
           </p>
 
           <div className="heroActions">
-            <a
-              href="#solutions"
-              className="primaryBtn"
-            >
+            <a href="#solutions" className="primaryBtn">
               Explore Solutions →
             </a>
 
-            <a
-              href="#about"
-              className="secondaryBtn"
-            >
+            <a href="#about" className="secondaryBtn">
               About Us
             </a>
           </div>
@@ -98,14 +89,9 @@ export default function Home() {
         </div>
       </section>
 
-      <section
-        id="solutions"
-        className="solutions"
-      >
+      <section id="solutions" className="solutions">
         <div className="sectionIntro">
-          <p className="dotLabel">
-            Our Solutions
-          </p>
+          <p className="dotLabel">Our Solutions</p>
 
           <h2>
             Solutions built to make everyday work
@@ -114,79 +100,145 @@ export default function Home() {
         </div>
 
         <div className="cards">
-
           {/* WEBSITE FIRST */}
 
-          <article className="card future webCard">
+          <article className="card webCardPro">
+            <div className="webCardCopy">
+              <div className="serviceBadge">
+                <span>◎</span>
+                Live Service
+              </div>
 
-            <div className="cardTop">
-              <small>Live Service</small>
-            </div>
-
-            <div className="webHeading">
               <h3>
-                <span>
-                  Website & Digital Solutions
-                </span>
+                Website &<br />
+                Digital Solutions
               </h3>
+
+              <p>
+                Modern websites and digital solutions designed to improve
+                visibility, generate enquiries and help businesses grow.
+              </p>
+
+              <div className="webFeatureList">
+                <div>
+                  <span className="featureIcon">▣</span>
+                  <strong>Websites</strong>
+                  <small>Modern, responsive and fast</small>
+                </div>
+
+                <div>
+                  <span className="featureIcon purple">▰</span>
+                  <strong>Platforms</strong>
+                  <small>Custom solutions that scale</small>
+                </div>
+
+                <div>
+                  <span className="featureIcon teal">↗</span>
+                  <strong>Leads</strong>
+                  <small>Convert visitors into customers</small>
+                </div>
+              </div>
+
+              <a
+                href="https://www.polokotombstones.co.za/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="webProjectBtn"
+              >
+                View Latest Project →
+              </a>
             </div>
 
-            <div className="deviceShowcase">
-
-              <div className="laptop">
-
-                <div className="screenContent">
-
-                  <h4>
-                    Grow your business online
-                  </h4>
-
-                  <p>
-                    Modern websites and digital
-                    solutions designed to improve
-                    visibility, generate enquiries
-                    and help businesses grow.
-                  </p>
-
-                  <div className="miniButton">
-                    Business Growth
+            <div className="webDevices">
+              <div className="laptopMockup">
+                <div className="laptopScreen">
+                  <div className="mockNav">
+                    <strong>FutureWeb</strong>
+                    <span>Home</span>
+                    <span>Services</span>
+                    <span>Work</span>
+                    <button>Get Started</button>
                   </div>
 
+                  <div className="mockHero">
+                    <h4>
+                      We Build
+                      <br />
+                      Digital Experiences
+                      <br />
+                      That <span>Drive Growth</span>
+                    </h4>
+
+                    <p>
+                      Next-generation websites and digital solutions built for
+                      performance, scale and results.
+                    </p>
+
+                    <button>Our Services →</button>
+
+                    <div className="mockStats">
+                      <div>
+                        <strong>120+</strong>
+                        <small>Projects</small>
+                      </div>
+
+                      <div>
+                        <strong>98%</strong>
+                        <small>Satisfaction</small>
+                      </div>
+
+                      <div>
+                        <strong>24/7</strong>
+                        <small>Support</small>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="planetGlow" />
                 </div>
 
+                <div className="laptopBase" />
               </div>
 
-              <div className="phone">
+              <div className="phoneMockup">
+                <div className="phoneScreen">
+                  <div className="phoneNav">
+                    <strong>FutureWeb</strong>
+                    <span>☰</span>
+                  </div>
 
-                <div className="phoneContent">
+                  <h5>
+                    Smart Solutions
+                    <br />
+                    For Your <span>Business</span>
+                  </h5>
 
-                  <h5>✓ Websites</h5>
-                  <h5>✓ Platforms</h5>
-                  <h5>✓ Leads</h5>
+                  <p>
+                    Websites, platforms and digital tools that help you grow.
+                  </p>
 
+                  <button>Get Started →</button>
+
+                  <div className="phoneTiles">
+                    <span>Design</span>
+                    <span>Develop</span>
+                    <span>Deploy</span>
+                  </div>
+
+                  <h6>
+                    Built for <span>today.</span>
+                    <br />
+                    Ready for <span>tomorrow.</span>
+                  </h6>
                 </div>
-
               </div>
-
             </div>
-
-            <a
-              href="https://www.polokotombstones.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Latest Project →
-            </a>
-
           </article>
-
 
           {/* DAILYBLOOM SECOND */}
 
           <article className="card daily">
-
             <div className="cardTop">
-
               <Image
                 src="/dailybloom-logo.png"
                 alt="DailyBloom"
@@ -195,17 +247,12 @@ export default function Home() {
                 className="productLogo"
               />
 
-              <small>
-                Live Solution
-              </small>
-
+              <small>Live Solution</small>
             </div>
 
             <p>
-              DailyBloom helps preschools manage
-              learners, attendance, events,
-              daily summaries, communication and
-              school operations from one clean
+              DailyBloom helps preschools manage learners, attendance, events,
+              daily summaries, communication and school operations from one clean
               platform.
             </p>
 
@@ -216,16 +263,12 @@ export default function Home() {
             >
               View DailyBloom →
             </a>
-
           </article>
-
 
           {/* WAGEFLOW LAST */}
 
           <article className="card wage">
-
             <div className="cardTop">
-
               <Image
                 src="/wageflow-logo.png"
                 alt="WageFlow"
@@ -234,17 +277,12 @@ export default function Home() {
                 className="productLogo wageLogo"
               />
 
-              <small>
-                Live Solution
-              </small>
-
+              <small>Live Solution</small>
             </div>
 
             <p>
-              WageFlow helps small businesses
-              calculate pay, generate payslips,
-              manage staff records and keep
-              workforce information organised.
+              WageFlow helps small businesses calculate pay, generate payslips,
+              manage staff records and keep workforce information organised.
             </p>
 
             <a
@@ -254,41 +292,26 @@ export default function Home() {
             >
               View WageFlow →
             </a>
-
           </article>
-
         </div>
       </section>
 
       <section className="bottomGrid">
-
-        <div
-          id="about"
-          className="panel aboutPanel"
-        >
-
+        <div id="about" className="panel aboutPanel">
           <h3>About Us</h3>
 
           <p>
-            Lesedi Smart Solutions is a South African
-            digital solutions company focused on
-            building simple, useful and affordable
-            technology.
+            Lesedi Smart Solutions is a South African digital solutions company
+            focused on building simple, useful and affordable technology.
           </p>
 
           <p>
-            Our solutions are designed for real people
-            and real organisations that need better
-            ways to manage daily work.
+            Our solutions are designed for real people and real organisations
+            that need better ways to manage daily work.
           </p>
-
         </div>
 
-        <div
-          id="contact"
-          className="panel contactPanel"
-        >
-
+        <div id="contact" className="panel contactPanel">
           <h3>Get in Touch</h3>
 
           <div className="contactItem">
@@ -296,9 +319,7 @@ export default function Home() {
 
             <div>
               <strong>Email</strong>
-              <p>
-                info@lesedismartsolutions.co.za
-              </p>
+              <p>info@lesedismartsolutions.co.za</p>
             </div>
           </div>
 
@@ -319,21 +340,16 @@ export default function Home() {
               <p>076 361 6044</p>
             </div>
           </div>
-
         </div>
 
         <div className="panel formPanel">
-
           <h3>Send us a Message</h3>
 
           <ContactForm />
-
         </div>
-
       </section>
 
       <footer className="footer">
-
         <div className="footerLogo">
           <Image
             src="/lesedi-logo.png"
@@ -342,28 +358,15 @@ export default function Home() {
             height={70}
           />
         </div>
-
       </footer>
 
       <div className="legalBar">
+        <p>Business Registration Number: 2026/315790/07</p>
 
-        <p>
-          Business Registration Number:
-          2026/315790/07
-        </p>
+        <p>Information Regulator Registration Number: 2026-010141</p>
 
-        <p>
-          Information Regulator Registration Number:
-          2026-010141
-        </p>
-
-        <p>
-          © 2026 Lesedi Smart Solutions.
-          All rights reserved.
-        </p>
-
+        <p>© 2026 Lesedi Smart Solutions. All rights reserved.</p>
       </div>
-
     </main>
   );
 }

@@ -229,28 +229,18 @@ a{
   border-radius:22px;
   padding:24px;
   box-shadow:0 10px 24px rgba(10,30,40,0.04);
+  display:flex;
+  flex-direction:column;
+  justify-content:space-between;
 }
 
 .cardTop{
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  align-items:flex-start;
+  gap:14px;
   margin-bottom:18px;
 }
-
-.icon{
-  width:52px;
-  height:52px;
-  border-radius:14px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:24px;
-}
-
-.flower{background:#fff4d8;}
-.payroll{background:#e7f8e8;}
-.rocket{background:#eaf1ff;}
 
 .cardTop small{
   background:#f3f7f7;
@@ -266,17 +256,6 @@ a{
   margin-bottom:12px;
 }
 
-.dailyBloom span:nth-child(1){color:#f05a28;}
-.dailyBloom span:nth-child(2){color:#f58b1f;}
-.dailyBloom span:nth-child(3){color:#f8b400;}
-.dailyBloom span:nth-child(4){color:#6bbf59;}
-.dailyBloom span:nth-child(5){color:#1db6aa;}
-.dailyBloom span:nth-child(6){color:#00a0dc;}
-.dailyBloom span:nth-child(7){color:#4a77d4;}
-.dailyBloom span:nth-child(8){color:#7b5ad9;}
-.dailyBloom span:nth-child(9){color:#9b51e0;}
-.dailyBloom span:nth-child(10){color:#d946ef;}
-
 .card p{
   color:#5f7788;
   line-height:1.7;
@@ -286,6 +265,374 @@ a{
 .card a{
   color:#0aa6bf;
   font-weight:700;
+}
+
+.productLogo{
+  width:230px;
+  height:80px;
+  object-fit:contain;
+  object-position:left center;
+  display:block;
+}
+
+/* WEBSITE & DIGITAL SOLUTIONS CARD */
+.webCardPro{
+  grid-column:1 / -1;
+  position:relative;
+  overflow:hidden;
+  min-height:620px;
+  padding:56px;
+  border-radius:32px;
+  background:
+    radial-gradient(circle at 78% 20%, rgba(0,136,255,.14), transparent 28%),
+    radial-gradient(circle at 54% 70%, rgba(108,77,255,.12), transparent 24%),
+    linear-gradient(135deg,#ffffff 0%,#f8fbff 48%,#eef6ff 100%);
+  display:grid;
+  grid-template-columns:.85fr 1.35fr;
+  align-items:center;
+  gap:36px;
+  border:1px solid #e2eaf4;
+  box-shadow:0 22px 60px rgba(20,40,70,.12);
+}
+
+.webCardPro::before{
+  content:"";
+  position:absolute;
+  right:90px;
+  top:38px;
+  width:220px;
+  height:150px;
+  opacity:.45;
+  background-image:radial-gradient(circle, rgba(40,120,255,.4) 1px, transparent 1.5px);
+  background-size:13px 13px;
+  transform:rotate(-35deg);
+}
+
+.webCardCopy{
+  position:relative;
+  z-index:2;
+}
+
+.serviceBadge{
+  width:max-content;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  padding:13px 22px;
+  border-radius:14px;
+  background:#eaf6fd;
+  color:#078dde;
+  text-transform:uppercase;
+  font-size:18px;
+  font-weight:800;
+  letter-spacing:3px;
+  margin-bottom:34px;
+}
+
+.serviceBadge span{
+  font-size:25px;
+}
+
+.webCardCopy h3{
+  font-size:72px;
+  line-height:1.08;
+  margin:0 0 28px;
+  letter-spacing:-1px;
+  background:linear-gradient(120deg,#009ee2 0%,#1d75ee 55%,#7a35f4 100%);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.webCardCopy > p{
+  max-width:520px;
+  color:#3d4961;
+  font-size:25px;
+  line-height:1.65;
+  margin-bottom:34px;
+}
+
+.webFeatureList{
+  display:flex;
+  flex-direction:column;
+  gap:24px;
+  margin-bottom:42px;
+}
+
+.webFeatureList div{
+  display:grid;
+  grid-template-columns:70px 1fr;
+  column-gap:18px;
+  align-items:center;
+}
+
+.featureIcon{
+  grid-row:span 2;
+  width:66px;
+  height:66px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#00a7e8,#0877e9);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  font-weight:800;
+}
+
+.featureIcon.purple{
+  background:linear-gradient(135deg,#2375ff,#7546f5);
+}
+
+.featureIcon.teal{
+  background:linear-gradient(135deg,#18d3b2,#0fb7cc);
+}
+
+.webFeatureList strong{
+  color:#07101f;
+  font-size:24px;
+  line-height:1.1;
+}
+
+.webFeatureList small{
+  color:#41506a;
+  font-size:20px;
+}
+
+.webProjectBtn{
+  width:max-content;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  padding:22px 32px;
+  border-radius:14px;
+  color:#fff !important;
+  font-size:24px;
+  font-weight:800;
+  background:linear-gradient(100deg,#05a8df,#7941f5);
+  box-shadow:0 14px 28px rgba(26,112,231,.25);
+}
+
+.webDevices{
+  position:relative;
+  min-height:520px;
+  z-index:2;
+}
+
+.laptopMockup{
+  position:absolute;
+  right:5%;
+  top:65px;
+  width:78%;
+  transform:perspective(900px) rotateY(-8deg) rotateZ(-3deg);
+}
+
+.laptopScreen{
+  position:relative;
+  height:360px;
+  overflow:hidden;
+  border:13px solid #08090d;
+  border-radius:18px 18px 8px 8px;
+  background:#06111f;
+  box-shadow:0 26px 42px rgba(4,13,30,.3);
+}
+
+.laptopScreen::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(130deg, transparent 0 45%, rgba(0,135,255,.16) 46%, transparent 47%),
+    radial-gradient(circle at 74% 56%, rgba(0,151,255,.35), transparent 18%),
+    radial-gradient(circle at 90% 60%, rgba(36,91,255,.2), transparent 24%);
+}
+
+.mockNav{
+  position:relative;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  gap:22px;
+  padding:28px 34px;
+  color:#fff;
+  font-size:10px;
+  text-transform:uppercase;
+}
+
+.mockNav strong{
+  margin-right:auto;
+  font-size:16px;
+  text-transform:none;
+}
+
+.mockNav button,
+.mockHero button,
+.phoneScreen button{
+  border:0;
+  color:#fff;
+  font-weight:800;
+  border-radius:8px;
+  background:linear-gradient(100deg,#079ff0,#743df0);
+}
+
+.mockNav button{
+  padding:12px 18px;
+  font-size:10px;
+}
+
+.mockHero{
+  position:relative;
+  z-index:2;
+  padding:16px 30px;
+  color:#fff;
+  max-width:360px;
+}
+
+.mockHero h4{
+  font-size:31px;
+  line-height:1.25;
+  font-style:italic;
+  margin-bottom:18px;
+}
+
+.mockHero h4 span,
+.phoneScreen span{
+  color:#139cff;
+}
+
+.mockHero p{
+  color:#d9e6ff;
+  font-size:13px;
+  line-height:1.6;
+  margin-bottom:18px;
+}
+
+.mockHero button{
+  padding:15px 24px;
+  font-size:11px;
+}
+
+.mockStats{
+  display:flex;
+  gap:10px;
+  margin-top:28px;
+}
+
+.mockStats div{
+  width:90px;
+  padding:14px;
+  border-radius:8px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.04);
+}
+
+.mockStats strong{
+  display:block;
+  font-size:21px;
+}
+
+.mockStats small{
+  color:#d8e6ff;
+  font-size:9px;
+}
+
+.planetGlow{
+  position:absolute;
+  right:-110px;
+  bottom:-120px;
+  width:340px;
+  height:340px;
+  border-radius:50%;
+  border:5px solid rgba(33,160,255,.75);
+  background:
+    radial-gradient(circle at 45% 40%, rgba(126,183,255,.35), transparent 15%),
+    radial-gradient(circle at 50% 50%, rgba(18,85,140,.75), #061120 58%, transparent 60%);
+  box-shadow:0 0 28px rgba(0,145,255,.8);
+}
+
+.laptopBase{
+  height:74px;
+  margin:0 auto;
+  width:92%;
+  background:linear-gradient(#8b9098,#5f646c);
+  clip-path:polygon(9% 0,91% 0,100% 100%,0 100%);
+  border-radius:0 0 22px 22px;
+  box-shadow:0 22px 25px rgba(20,30,45,.25);
+}
+
+.phoneMockup{
+  position:absolute;
+  right:0;
+  bottom:28px;
+  width:210px;
+  height:420px;
+  padding:10px;
+  border-radius:34px;
+  background:#05070b;
+  border:4px solid #3c414b;
+  box-shadow:0 20px 38px rgba(5,10,25,.35);
+}
+
+.phoneScreen{
+  height:100%;
+  border-radius:25px;
+  padding:28px 20px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 80% 35%, rgba(0,145,255,.22), transparent 28%),
+    linear-gradient(155deg,#071322,#020710);
+}
+
+.phoneNav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  font-size:12px;
+  margin-bottom:44px;
+}
+
+.phoneScreen h5{
+  font-size:23px;
+  line-height:1.25;
+  margin-bottom:16px;
+}
+
+.phoneScreen p{
+  color:#d9e6ff;
+  font-size:12px;
+  line-height:1.6;
+  margin-bottom:16px;
+}
+
+.phoneScreen button{
+  width:100%;
+  padding:13px;
+  font-size:11px;
+  margin-bottom:28px;
+}
+
+.phoneTiles{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:8px;
+  margin-bottom:28px;
+}
+
+.phoneTiles span{
+  min-height:58px;
+  border-radius:8px;
+  background:rgba(255,255,255,.06);
+  display:flex;
+  align-items:end;
+  justify-content:center;
+  padding:8px;
+  color:#fff;
+  font-size:9px;
+}
+
+.phoneScreen h6{
+  font-size:18px;
+  line-height:1.3;
 }
 
 /* LOWER GRID */
@@ -412,7 +759,7 @@ button{
 }
 
 /* TABLET */
-@media (max-width: 980px){
+@media (max-width:980px){
   .hero,
   .cards,
   .bottomGrid{
@@ -426,10 +773,33 @@ button{
   .heroText h1{
     font-size:54px;
   }
+
+  .webCardPro{
+    grid-template-columns:1fr;
+    padding:34px;
+  }
+
+  .webCardCopy h3{
+    font-size:50px;
+  }
+
+  .webCardCopy > p{
+    font-size:19px;
+  }
+
+  .webDevices{
+    min-height:470px;
+  }
+
+  .laptopMockup{
+    left:0;
+    right:auto;
+    width:88%;
+  }
 }
 
 /* MOBILE */
-@media (max-width: 700px){
+@media (max-width:700px){
   .nav,
   .hero,
   .trustStrip,
@@ -503,211 +873,78 @@ button{
     flex-direction:column;
     text-align:center;
   }
-}
-.productLogo{
-  width:230px;
-  height:80px;
-  object-fit:contain;
-  object-position:left center;
-  display:block;
-}
 
-.cardTop{
-  align-items:flex-start;
-  gap:14px;
-}
-
-/* Make all cards same height */
-.card{
-  display:flex;
-  flex-direction:column;
-  justify-content:space-between;
-  min-height:500px;
-}
-
-/* WEBSITE CARD */
-
-.webCard{
-  position:relative;
-  overflow:hidden;
-}
-
-.webCard::before{
-  content:"";
-  position:absolute;
-  width:260px;
-  height:260px;
-  right:-120px;
-  top:-120px;
-  border-radius:50%;
-  background:rgba(0,168,204,.08);
-}
-
-/* Website heading */
-
-.webHeading{
-  margin-bottom:24px;
-}
-
-.webHeading h3{
-  margin:0;
-  font-size:2.2rem;
-  font-weight:800;
-  line-height:1.1;
-}
-
-.webHeading h3 span{
-  display:inline-block;
-
-  background:linear-gradient(
-    135deg,
-    #00a8cc,
-    #2f80ed,
-    #7b61ff
-  );
-
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
-}
-
-
-/* Device showcase */
-
-.deviceShowcase{
-  position:relative;
-  margin:20px 0;
-  min-height:280px;
-}
-
-
-/* Laptop */
-
-.laptop{
-  width:100%;
-  min-height:220px;
-  background:#182434;
-  border-radius:22px;
-  padding:14px;
-  position:relative;
-}
-
-.screenContent{
-  background:#fff;
-  border-radius:14px;
-  min-height:190px;
-  padding:24px;
-  padding-right:95px; /* creates space for phone overlap */
-}
-
-.screenContent h4{
-  font-size:18px;
-  margin-bottom:14px;
-  color:#12304a;
-}
-
-.screenContent p{
-  font-size:14px;
-  line-height:1.7;
-  color:#5f7788;
-  max-width:90%;
-}
-
-
-/* Growth button */
-
-.miniButton{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-
-  margin-top:18px;
-  padding:10px 18px;
-
-  border-radius:999px;
-
-  background:linear-gradient(
-    90deg,
-    #00a8cc,
-    #2f80ed
-  );
-
-  color:white;
-  font-size:13px;
-  font-weight:700;
-}
-
-
-/* Phone */
-
-.phone{
-  width:95px;
-  height:170px;
-
-  position:absolute;
-  right:-8px;
-  bottom:-12px;
-
-  background:#101826;
-
-  border-radius:24px;
-  border:4px solid white;
-
-  padding:8px;
-}
-
-.phoneContent{
-  background:white;
-  border-radius:14px;
-  height:100%;
-  padding:10px;
-}
-
-.phoneContent h5{
-  margin:15px 0;
-  font-size:12px;
-  color:#00a8cc;
-}
-
-
-/* Mobile */
-
-@media (max-width:768px){
-
-.screenContent{
-padding-right:24px;
-}
-
-.phone{
-right:0;
-bottom:-20px;
-width:75px;
-height:140px;
-}
-
-.webHeading h3{
-font-size:1.8rem;
-}
-
-}
-
-  .deviceShowcase{
-    height:200px;
+  .webCardPro{
+    padding:24px;
+    border-radius:24px;
   }
 
-  .laptop{
-    height:160px;
+  .serviceBadge{
+    font-size:12px;
+    letter-spacing:2px;
   }
 
-  .phone{
-    width:75px;
-    height:135px;
+  .webCardCopy h3{
+    font-size:38px;
   }
 
-  .screenContent h4{
+  .webCardCopy > p{
+    font-size:16px;
+  }
+
+  .webFeatureList strong{
+    font-size:18px;
+  }
+
+  .webFeatureList small{
+    font-size:14px;
+  }
+
+  .webProjectBtn{
+    width:100%;
+    font-size:18px;
+  }
+
+  .webDevices{
+    min-height:360px;
+  }
+
+  .laptopMockup{
+    top:48px;
+    width:100%;
+  }
+
+  .laptopScreen{
+    height:260px;
+  }
+
+  .mockNav span,
+  .mockStats{
+    display:none;
+  }
+
+  .mockHero h4{
+    font-size:22px;
+  }
+
+  .phoneMockup{
+    width:135px;
+    height:275px;
+    right:-10px;
+    bottom:8px;
+  }
+
+  .phoneScreen{
+    padding:18px 12px;
+  }
+
+  .phoneScreen h5{
     font-size:15px;
   }
 
-  .screenContent p{
-    font-size:12px;
+  .phoneScreen p,
+  .phoneTiles,
+  .phoneScreen h6{
+    display:none;
   }
+}
