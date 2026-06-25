@@ -102,57 +102,79 @@ export default function Home() {
         <div className="cards">
           {/* WEBSITE FIRST */}
 
-<article className="card websiteHeroCard">
-  <div className="cardTop">
-    <div className="websiteIcon">&lt;/&gt;</div>
-    <small>Live Service</small>
-  </div>
+          <article className="card websiteHeroCard">
+            <div className="cardTop">
+              <div className="websiteIcon">&lt;/&gt;</div>
+              <small>Live Service</small>
+            </div>
 
-  <h3>
-    Website &<br />
-    <span>Digital Solutions</span>
-  </h3>
+            <h3>
+              Website &<br />
+              <span>Digital Solutions</span>
+            </h3>
 
-  <p>
-    Modern websites and digital tools that help businesses grow online.
-  </p>
+            <p>
+              Modern websites and digital tools that help businesses grow
+              online.
+            </p>
 
-  <div className="websiteHeroDevices">
-    <div className="heroLaptop">
-      <div>
-        <strong>FutureWeb</strong>
+            <div className="futureDevicePreview">
+              <div className="futureLaptop">
+                <div className="futureScreen">
+                  <div className="futureNav">
+                    <strong>FutureWeb</strong>
+                    <span>Home</span>
+                    <span>Work</span>
+                  </div>
 
-        <div className="laptopFeatureRows">
-          <span>▣ Websites</span>
-          <span>▰ Platforms</span>
-          <span>↗ Leads</span>
-        </div>
-      </div>
-    </div>
+                  <h4>
+                    We Build
+                    <br />
+                    Digital Experiences
+                    <br />
+                    That <span>Drive Growth</span>
+                  </h4>
 
-    <div className="heroPhone">
-      <div>
-        <strong>FutureWeb</strong>
-        <p>
-          Smart
-          <br />
-          digital
-          <br />
-          growth
-        </p>
-      </div>
-    </div>
-  </div>
+                  <div className="futureCta">Our Services →</div>
 
-  <a
-    href="https://www.polokotombstones.co.za/"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="websiteHeroBtn"
-  >
-    View Latest Project →
-  </a>
-</article>
+                  <div className="futureStats">
+                    <span>120+</span>
+                    <span>98%</span>
+                    <span>24/7</span>
+                  </div>
+
+                  <div className="futurePlanet" />
+                </div>
+              </div>
+
+              <div className="futurePhone">
+                <div>
+                  <strong>FutureWeb</strong>
+
+                  <p>
+                    Smart
+                    <br />
+                    Solutions
+                    <br />
+                    For Your
+                    <br />
+                    <span>Business</span>
+                  </p>
+
+                  <small>Get Started →</small>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.polokotombstones.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="websiteHeroBtn"
+            >
+              View Latest Project →
+            </a>
+          </article>
 
           {/* DAILYBLOOM SECOND */}
 
