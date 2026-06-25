@@ -618,6 +618,7 @@ button{
   font-size:15px;
   font-weight:700;
   color:#0aa6bf;
+  white-space:nowrap;
 }
 
 /* DEVICE SCENE — KEY FIX */
