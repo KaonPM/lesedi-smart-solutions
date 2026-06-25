@@ -108,7 +108,7 @@ export default function Home() {
     Website & Digital Solutions
   </h3>
 
-  <small>Live Solution</small>
+  <small>Live Service</small>
 </div>
 
 <div className="websiteReferenceGrid">
