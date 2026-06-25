@@ -102,61 +102,73 @@ export default function Home() {
         <div className="cards">
           {/* WEBSITE FIRST */}
 
-          <article className="card websiteSolutionCard">
-            <div className="cardTop">
-              <div className="websiteIcon">&lt;/&gt;</div>
-              <small>Live Service</small>
-            </div>
+ <article className="card websiteHeroCard">
+  <div className="websiteHeroBadge">
+    <span>◎</span>
+    Live Service
+  </div>
 
-            <h3>
-              Website &<br />
-              <span>Digital Solutions</span>
-            </h3>
+  <h3>
+    Website &<br />
+    <span>Digital Solutions</span>
+  </h3>
 
-            <p>
-              Modern websites and digital tools that help businesses grow online.
-            </p>
+  <p>
+    Modern websites and digital solutions designed to improve visibility,
+    generate enquiries and help businesses grow.
+  </p>
 
-            <div className="websiteMiniFeatures">
-              <span>Websites</span>
-              <span>Platforms</span>
-              <span>Leads</span>
-            </div>
+  <div className="websiteHeroFeatures">
+    <div>
+      <span>▣</span>
+      <strong>Websites</strong>
+      <small>Modern and responsive</small>
+    </div>
 
-            <div className="websiteDeviceMockup">
-              <div className="miniLaptop">
-                <div className="miniScreen">
-                  <strong>FutureWeb</strong>
+    <div>
+      <span>▰</span>
+      <strong>Platforms</strong>
+      <small>Solutions that scale</small>
+    </div>
 
-                  <h4>
-                    We Build
-                    <br />
-                    Digital Growth
-                  </h4>
-                </div>
-              </div>
+    <div>
+      <span>↗</span>
+      <strong>Leads</strong>
+      <small>Convert visitors</small>
+    </div>
+  </div>
 
-              <div className="miniPhone">
-                <div>
-                  <strong>FutureWeb</strong>
+  <div className="websiteHeroDevices">
+    <div className="heroLaptop">
+      <div>
+        <strong>FutureWeb</strong>
+        <h4>
+          We Build<br />
+          Digital Growth
+        </h4>
+      </div>
+    </div>
 
-                  <p>
-                    Smart
-                    <br />
-                    Solutions
-                  </p>
-                </div>
-              </div>
-            </div>
+    <div className="heroPhone">
+      <div>
+        <strong>FutureWeb</strong>
+        <p>
+          Smart<br />
+          Solutions
+        </p>
+      </div>
+    </div>
+  </div>
 
-            <a
-              href="https://www.polokotombstones.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Latest Project →
-            </a>
-          </article>
+  <a
+    href="https://www.polokotombstones.co.za/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="websiteHeroBtn"
+  >
+    View Latest Project →
+  </a>
+</article>
 
           {/* DAILYBLOOM SECOND */}
 
