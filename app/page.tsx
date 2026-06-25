@@ -100,7 +100,65 @@ export default function Home() {
         </div>
 
         <div className="cards">
-          {/* DAILYBLOOM FIRST */}
+          {/* WEBSITE FIRST */}
+
+          <article className="card websiteSolutionCard">
+            <div className="cardTop">
+              <div className="websiteIcon">&lt;/&gt;</div>
+              <small>Live Service</small>
+            </div>
+
+            <h3>
+              Website &<br />
+              <span>Digital Solutions</span>
+            </h3>
+
+            <p>
+              Modern websites and digital tools that help businesses grow online.
+            </p>
+
+            <div className="websiteMiniFeatures">
+              <span>Websites</span>
+              <span>Platforms</span>
+              <span>Leads</span>
+            </div>
+
+            <div className="websiteDeviceMockup">
+              <div className="miniLaptop">
+                <div className="miniScreen">
+                  <strong>FutureWeb</strong>
+
+                  <h4>
+                    We Build
+                    <br />
+                    Digital Growth
+                  </h4>
+                </div>
+              </div>
+
+              <div className="miniPhone">
+                <div>
+                  <strong>FutureWeb</strong>
+
+                  <p>
+                    Smart
+                    <br />
+                    Solutions
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.polokotombstones.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Latest Project →
+            </a>
+          </article>
+
+          {/* DAILYBLOOM SECOND */}
 
           <article className="card daily">
             <div className="cardTop">
@@ -130,7 +188,7 @@ export default function Home() {
             </a>
           </article>
 
-          {/* WAGEFLOW SECOND */}
+          {/* WAGEFLOW THIRD */}
 
           <article className="card wage">
             <div className="cardTop">
@@ -156,82 +214,6 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               View WageFlow →
-            </a>
-          </article>
-
-          {/* WEBSITE THIRD */}
-
-          <article className="card websiteSolutionCard">
-            <div className="websiteCardTop">
-              <div className="websiteIcon">&lt;/&gt;</div>
-
-              <small>
-                Live
-                <br />
-                Service
-              </small>
-            </div>
-
-            <h3>
-              Website &<br />
-              <span>Digital Solutions</span>
-            </h3>
-
-            <p>
-              We help businesses improve online visibility, attract customers,
-              and generate enquiries through modern websites and tailored
-              digital solutions.
-            </p>
-
-            <div className="websiteTags">
-              <span>▣ Web Design</span>
-              <span>↗ Lead Generation</span>
-              <span>⚙ Custom Systems</span>
-            </div>
-
-            <div className="websitePreview">
-              <div className="previewLaptop">
-                <div className="previewScreen">
-                  <strong>POLOKO</strong>
-
-                  <h4>
-                    Honouring Memories,
-                    <br />
-                    Preserving Legacies
-                  </h4>
-
-                  <p>
-                    Quality tombstones and memorials crafted with care and
-                    respect.
-                  </p>
-
-                  <button>View Our Products</button>
-                </div>
-              </div>
-
-              <div className="previewPhone">
-                <div>
-                  <strong>POLOKO</strong>
-
-                  <h5>
-                    Honouring
-                    <br />
-                    Memories,
-                    <br />
-                    Preserving
-                    <br />
-                    Legacies
-                  </h5>
-                </div>
-              </div>
-            </div>
-
-            <a
-              href="https://www.polokotombstones.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              View Latest Project →
             </a>
           </article>
         </div>

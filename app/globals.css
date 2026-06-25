@@ -231,8 +231,8 @@ a{
   box-shadow:0 10px 24px rgba(10,30,40,0.04);
   display:flex;
   flex-direction:column;
-  justify-content:space-between;
-  min-height:500px;
+  gap:18px;
+  min-height:430px;
 }
 
 .cardTop{
@@ -240,7 +240,7 @@ a{
   justify-content:space-between;
   align-items:flex-start;
   gap:14px;
-  margin-bottom:18px;
+  margin-bottom:4px;
 }
 
 .cardTop small{
@@ -266,6 +266,7 @@ a{
 .card a{
   color:#0aa6bf;
   font-weight:700;
+  margin-top:auto;
 }
 
 .productLogo{
@@ -280,71 +281,46 @@ a{
 .websiteSolutionCard{
   position:relative;
   overflow:hidden;
-  padding:34px;
   background:
-    radial-gradient(circle at 92% 8%, rgba(11,166,191,.12), transparent 28%),
-    linear-gradient(135deg,#ffffff 0%,#fbfdff 55%,#f4fbff 100%);
+    radial-gradient(circle at 88% 10%, rgba(10,166,191,.13), transparent 30%),
+    linear-gradient(135deg,#ffffff 0%,#fbfdff 58%,#f3f8ff 100%);
 }
 
 .websiteSolutionCard::before{
   content:"";
   position:absolute;
-  right:-70px;
-  top:-40px;
-  width:230px;
-  height:230px;
+  right:-65px;
+  top:-65px;
+  width:180px;
+  height:180px;
   border-radius:50%;
   background:rgba(10,166,191,.08);
 }
 
-.websiteCardTop{
-  position:relative;
-  z-index:2;
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
-  margin-bottom:20px;
-}
-
 .websiteIcon{
-  width:72px;
-  height:72px;
-  border-radius:18px;
-  background:linear-gradient(135deg,#d7e8ff,#f0ddff);
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#d9eaff,#efe3ff);
   color:#2563eb;
   display:flex;
   align-items:center;
   justify-content:center;
-  font-size:30px;
+  font-size:24px;
   font-weight:900;
-}
-
-.websiteCardTop small{
-  width:88px;
-  height:88px;
-  border-radius:50%;
-  background:#eaf8f8;
-  color:#066b67;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  line-height:1.35;
-  font-size:14px;
-  font-weight:800;
 }
 
 .websiteSolutionCard h3{
   position:relative;
   z-index:2;
-  font-size:34px;
+  font-size:30px;
   line-height:1.08;
-  margin-bottom:18px;
+  margin:0;
   color:#102442;
 }
 
 .websiteSolutionCard h3 span{
-  background:linear-gradient(90deg,#1677f2,#8657f4);
+  background:linear-gradient(90deg,#0a8ee8,#8057f4);
   -webkit-background-clip:text;
   background-clip:text;
   -webkit-text-fill-color:transparent;
@@ -353,23 +329,22 @@ a{
 .websiteSolutionCard > p{
   position:relative;
   z-index:2;
-  color:#33465f;
-  font-size:16px;
+  font-size:15px;
   line-height:1.55;
-  margin-bottom:18px;
+  margin:0;
+  color:#4f6677;
 }
 
-.websiteTags{
+.websiteMiniFeatures{
   position:relative;
   z-index:2;
   display:flex;
   gap:8px;
   flex-wrap:wrap;
-  margin-bottom:22px;
 }
 
-.websiteTags span{
-  padding:8px 11px;
+.websiteMiniFeatures span{
+  padding:7px 10px;
   border-radius:999px;
   background:#eaf3ff;
   color:#195ad7;
@@ -377,121 +352,89 @@ a{
   font-weight:700;
 }
 
-.websiteTags span:nth-child(3){
-  background:#f1ecff;
-  color:#6546d9;
-}
-
-.websitePreview{
+.websiteDeviceMockup{
   position:relative;
   z-index:2;
-  height:185px;
-  margin-top:auto;
-  margin-bottom:24px;
+  height:145px;
+  margin-top:2px;
 }
 
-.previewLaptop{
+.miniLaptop{
   position:absolute;
   left:0;
   bottom:0;
   width:82%;
-  height:150px;
-  padding:8px;
-  border-radius:10px 10px 4px 4px;
-  background:#1d232b;
+  height:118px;
+  padding:7px;
+  border-radius:12px 12px 5px 5px;
+  background:#070b12;
   box-shadow:0 14px 24px rgba(15,28,45,.22);
 }
 
-.previewLaptop::after{
+.miniLaptop::after{
   content:"";
   position:absolute;
   left:8%;
   right:8%;
-  bottom:-10px;
-  height:10px;
+  bottom:-8px;
+  height:8px;
   border-radius:0 0 14px 14px;
-  background:linear-gradient(#8b9199,#5c626b);
+  background:linear-gradient(#8d949d,#5f6570);
 }
 
-.previewScreen{
+.miniScreen{
   height:100%;
-  border-radius:6px;
-  padding:18px;
+  border-radius:7px;
+  padding:14px;
   color:#fff;
   background:
-    linear-gradient(rgba(4,8,14,.55),rgba(4,8,14,.75)),
-    radial-gradient(circle at 75% 45%, rgba(255,255,255,.18), transparent 24%),
-    linear-gradient(135deg,#101820,#2b2f2d);
+    radial-gradient(circle at 78% 48%, rgba(0,145,255,.45), transparent 24%),
+    linear-gradient(135deg,#071423,#020711);
 }
 
-.previewScreen strong{
+.miniScreen strong{
   display:block;
-  font-size:15px;
-  letter-spacing:2px;
-  margin-bottom:22px;
+  font-size:11px;
+  margin-bottom:16px;
 }
 
-.previewScreen h4{
-  font-size:16px;
-  line-height:1.2;
-  margin-bottom:8px;
+.miniScreen h4{
+  font-size:17px;
+  line-height:1.15;
 }
 
-.previewScreen p{
-  max-width:210px;
-  color:#dce4ea;
-  font-size:8px;
-  line-height:1.5;
-  margin-bottom:8px;
-}
-
-.previewScreen button{
-  padding:7px 12px;
-  border-radius:999px;
-  background:#ffffff;
-  color:#102033;
-  font-size:8px;
-}
-
-.previewPhone{
+.miniPhone{
   position:absolute;
   right:0;
-  bottom:-4px;
-  width:72px;
-  height:145px;
+  bottom:-2px;
+  width:64px;
+  height:122px;
   padding:5px;
-  border-radius:18px;
-  background:#111820;
+  border-radius:17px;
+  background:#06090f;
   border:3px solid #343b45;
-  box-shadow:0 14px 24px rgba(15,28,45,.28);
+  box-shadow:0 14px 24px rgba(15,28,45,.26);
 }
 
-.previewPhone > div{
+.miniPhone > div{
   height:100%;
-  border-radius:13px;
-  padding:13px 9px;
+  border-radius:12px;
+  padding:12px 8px;
   color:#fff;
-  background:linear-gradient(150deg,#151d25,#05080d);
+  background:linear-gradient(150deg,#111b29,#03070d);
 }
 
-.previewPhone strong{
+.miniPhone strong{
   display:block;
-  font-size:8px;
-  letter-spacing:1px;
-  margin-bottom:18px;
+  font-size:7px;
+  margin-bottom:20px;
 }
 
-.previewPhone h5{
+.miniPhone p{
+  color:#fff;
   font-size:10px;
   line-height:1.2;
-}
-
-.websiteSolutionCard > a{
-  position:relative;
-  z-index:2;
-  color:#0798b5;
-  font-size:18px;
-  font-weight:800;
+  margin:0;
 }
 
 /* LOWER GRID */
@@ -710,45 +653,24 @@ button{
     text-align:center;
   }
 
-  .websiteSolutionCard{
-    padding:24px;
-  }
-
-  .websiteIcon{
-    width:58px;
-    height:58px;
-    font-size:24px;
-  }
-
-  .websiteCardTop small{
-    width:74px;
-    height:74px;
-    font-size:12px;
+  .card{
+    min-height:auto;
   }
 
   .websiteSolutionCard h3{
-    font-size:30px;
+    font-size:28px;
   }
 
-  .websitePreview{
-    height:165px;
-  }
-
-  .previewLaptop{
-    width:84%;
+  .websiteDeviceMockup{
     height:135px;
   }
 
-  .previewPhone{
-    width:64px;
-    height:128px;
+  .miniLaptop{
+    height:108px;
   }
 
-  .previewScreen{
-    padding:14px;
-  }
-
-  .previewScreen strong{
-    margin-bottom:16px;
+  .miniPhone{
+    width:60px;
+    height:114px;
   }
 }
