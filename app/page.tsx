@@ -102,10 +102,10 @@ export default function Home() {
         <div className="cards">
           {/* WEBSITE FIRST */}
 
- <article className="card websiteHeroCard">
-  <div className="websiteHeroBadge">
-    <span>◎</span>
-    Live Service
+<article className="card websiteHeroCard">
+  <div className="cardTop">
+    <div className="websiteIcon">&lt;/&gt;</div>
+    <small>Live Service</small>
   </div>
 
   <h3>
@@ -114,38 +114,19 @@ export default function Home() {
   </h3>
 
   <p>
-    Modern websites and digital solutions designed to improve visibility,
-    generate enquiries and help businesses grow.
+    Modern websites and digital tools that help businesses grow online.
   </p>
-
-  <div className="websiteHeroFeatures">
-    <div>
-      <span>▣</span>
-      <strong>Websites</strong>
-      <small>Modern and responsive</small>
-    </div>
-
-    <div>
-      <span>▰</span>
-      <strong>Platforms</strong>
-      <small>Solutions that scale</small>
-    </div>
-
-    <div>
-      <span>↗</span>
-      <strong>Leads</strong>
-      <small>Convert visitors</small>
-    </div>
-  </div>
 
   <div className="websiteHeroDevices">
     <div className="heroLaptop">
       <div>
         <strong>FutureWeb</strong>
-        <h4>
-          We Build<br />
-          Digital Growth
-        </h4>
+
+        <div className="laptopFeatureRows">
+          <span>▣ Websites</span>
+          <span>▰ Platforms</span>
+          <span>↗ Leads</span>
+        </div>
       </div>
     </div>
 
@@ -153,8 +134,11 @@ export default function Home() {
       <div>
         <strong>FutureWeb</strong>
         <p>
-          Smart<br />
-          Solutions
+          Smart
+          <br />
+          digital
+          <br />
+          growth
         </p>
       </div>
     </div>

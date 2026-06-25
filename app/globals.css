@@ -231,8 +231,8 @@ a{
   box-shadow:0 10px 24px rgba(10,30,40,0.04);
   display:flex;
   flex-direction:column;
-  gap:18px;
-  min-height:430px;
+  gap:16px;
+  min-height:390px;
 }
 
 .cardTop{
@@ -282,43 +282,38 @@ a{
   position:relative;
   overflow:hidden;
   background:
-    radial-gradient(circle at 92% 18%, rgba(102,126,255,.16), transparent 28%),
-    radial-gradient(circle at 60% 72%, rgba(0,166,191,.10), transparent 24%),
-    linear-gradient(135deg,#ffffff 0%,#fbfdff 55%,#f1f7ff 100%);
+    radial-gradient(circle at 92% 14%, rgba(102,126,255,.15), transparent 26%),
+    linear-gradient(135deg,#ffffff 0%,#fbfdff 58%,#f1f7ff 100%);
 }
 
 .websiteHeroCard::before{
   content:"";
   position:absolute;
-  right:-60px;
-  top:-55px;
-  width:170px;
-  height:170px;
+  right:-58px;
+  top:-58px;
+  width:165px;
+  height:165px;
   border-radius:50%;
   background:rgba(10,166,191,.08);
 }
 
-.websiteHeroBadge{
-  position:relative;
-  z-index:2;
-  width:max-content;
+.websiteIcon{
+  width:56px;
+  height:56px;
+  border-radius:16px;
+  background:linear-gradient(135deg,#d9eaff,#efe3ff);
+  color:#2563eb;
   display:flex;
   align-items:center;
-  gap:8px;
-  background:#edf7fb;
-  color:#078dde;
-  padding:8px 14px;
-  border-radius:12px;
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:1.8px;
-  text-transform:uppercase;
+  justify-content:center;
+  font-size:24px;
+  font-weight:900;
 }
 
 .websiteHeroCard h3{
   position:relative;
   z-index:2;
-  font-size:32px;
+  font-size:30px;
   line-height:1.05;
   margin:0;
   color:#102442;
@@ -335,71 +330,24 @@ a{
   position:relative;
   z-index:2;
   font-size:15px;
-  line-height:1.55;
+  line-height:1.5;
   color:#4f6677;
   margin:0;
-}
-
-.websiteHeroFeatures{
-  position:relative;
-  z-index:2;
-  display:grid;
-  gap:10px;
-}
-
-.websiteHeroFeatures div{
-  display:grid;
-  grid-template-columns:40px 1fr;
-  column-gap:10px;
-  align-items:center;
-}
-
-.websiteHeroFeatures span{
-  grid-row:span 2;
-  width:38px;
-  height:38px;
-  border-radius:50%;
-  background:linear-gradient(135deg,#079fe8,#1767f2);
-  color:#fff;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:16px;
-  font-weight:800;
-}
-
-.websiteHeroFeatures div:nth-child(2) span{
-  background:linear-gradient(135deg,#246cff,#7557f5);
-}
-
-.websiteHeroFeatures div:nth-child(3) span{
-  background:linear-gradient(135deg,#15d0b0,#0ba9bf);
-}
-
-.websiteHeroFeatures strong{
-  font-size:15px;
-  color:#102442;
-  line-height:1.1;
-}
-
-.websiteHeroFeatures small{
-  font-size:12px;
-  color:#5f7788;
 }
 
 .websiteHeroDevices{
   position:relative;
   z-index:2;
-  height:140px;
-  margin-top:2px;
+  height:132px;
+  margin-top:4px;
 }
 
 .heroLaptop{
   position:absolute;
   left:0;
   bottom:0;
-  width:82%;
-  height:116px;
+  width:84%;
+  height:112px;
   padding:8px;
   border-radius:12px 12px 5px 5px;
   background:#070b12;
@@ -421,31 +369,42 @@ a{
 .heroLaptop > div{
   height:100%;
   border-radius:7px;
-  padding:14px;
+  padding:12px;
   color:#fff;
   background:
-    radial-gradient(circle at 78% 50%, rgba(0,145,255,.55), transparent 25%),
+    radial-gradient(circle at 82% 48%, rgba(0,145,255,.48), transparent 25%),
     linear-gradient(135deg,#071423,#020711);
 }
 
 .heroLaptop strong,
 .heroPhone strong{
   display:block;
-  font-size:10px;
-  margin-bottom:18px;
+  font-size:9px;
+  margin-bottom:10px;
 }
 
-.heroLaptop h4{
-  font-size:17px;
-  line-height:1.15;
+.laptopFeatureRows{
+  display:grid;
+  gap:6px;
+}
+
+.laptopFeatureRows span{
+  width:max-content;
+  max-width:100%;
+  padding:5px 8px;
+  border-radius:999px;
+  background:rgba(255,255,255,.09);
+  color:#eaf6ff;
+  font-size:9px;
+  font-weight:800;
 }
 
 .heroPhone{
   position:absolute;
   right:0;
   bottom:-2px;
-  width:62px;
-  height:122px;
+  width:60px;
+  height:116px;
   padding:5px;
   border-radius:17px;
   background:#05070c;
@@ -456,15 +415,15 @@ a{
 .heroPhone > div{
   height:100%;
   border-radius:12px;
-  padding:12px 8px;
+  padding:11px 7px;
   color:#fff;
   background:linear-gradient(150deg,#111b29,#03070d);
 }
 
 .heroPhone p{
   color:#fff;
-  font-size:10px;
-  line-height:1.2;
+  font-size:9px;
+  line-height:1.25;
   margin:0;
 }
 
@@ -700,15 +659,15 @@ button{
   }
 
   .websiteHeroDevices{
-    height:135px;
+    height:128px;
   }
 
   .heroLaptop{
-    height:108px;
+    height:106px;
   }
 
   .heroPhone{
-    width:60px;
-    height:114px;
+    width:58px;
+    height:110px;
   }
 }
