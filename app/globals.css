@@ -232,7 +232,7 @@ a{
   display:flex;
   flex-direction:column;
   gap:16px;
-  min-height:390px;
+  min-height:430px;
 }
 
 .cardTop{
@@ -278,240 +278,222 @@ a{
 }
 
 /* WEBSITE & DIGITAL SOLUTIONS CARD */
-.websiteHeroCard{
+.websiteCompactCard{
   position:relative;
   overflow:hidden;
   background:
     radial-gradient(circle at 92% 14%, rgba(102,126,255,.16), transparent 26%),
-    linear-gradient(135deg,#ffffff 0%,#fbfdff 58%,#f1f7ff 100%);
+    radial-gradient(circle at 58% 72%, rgba(0,166,191,.10), transparent 24%),
+    linear-gradient(135deg,#ffffff 0%,#fbfdff 56%,#f1f7ff 100%);
 }
 
-.websiteHeroCard::before{
+.websiteCompactCard::before{
   content:"";
   position:absolute;
-  right:-58px;
+  right:-60px;
   top:-58px;
-  width:165px;
-  height:165px;
+  width:170px;
+  height:170px;
   border-radius:50%;
   background:rgba(10,166,191,.08);
 }
 
-.websiteIcon{
-  width:56px;
-  height:56px;
-  border-radius:16px;
-  background:linear-gradient(135deg,#d9eaff,#efe3ff);
-  color:#2563eb;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-size:24px;
-  font-weight:900;
-}
-
-.websiteHeroCard h3{
+.compactBadge{
   position:relative;
   z-index:2;
-  font-size:30px;
+  width:max-content;
+  display:flex;
+  align-items:center;
+  gap:8px;
+  background:#edf7fb;
+  color:#078dde;
+  padding:8px 14px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+}
+
+.compactBadge span{
+  font-size:15px;
+}
+
+.websiteCompactCard h3{
+  position:relative;
+  z-index:2;
+  font-size:31px;
   line-height:1.05;
   margin:0;
   color:#102442;
 }
 
-.websiteHeroCard h3 span{
+.websiteCompactCard h3 span{
   background:linear-gradient(90deg,#079fe8,#7657f5);
   -webkit-background-clip:text;
   background-clip:text;
   -webkit-text-fill-color:transparent;
 }
 
-.websiteHeroCard > p{
+.websiteCompactCard > p{
   position:relative;
   z-index:2;
-  font-size:15px;
+  font-size:14.5px;
   line-height:1.5;
   color:#4f6677;
   margin:0;
 }
 
-.futureDevicePreview{
+.compactFeatureList{
   position:relative;
   z-index:2;
-  height:150px;
-  margin-top:4px;
+  display:grid;
+  gap:8px;
 }
 
-.futureLaptop{
+.compactFeatureList div{
+  display:grid;
+  grid-template-columns:36px 1fr;
+  column-gap:10px;
+  align-items:center;
+}
+
+.compactFeatureList span{
+  grid-row:span 2;
+  width:34px;
+  height:34px;
+  border-radius:50%;
+  background:linear-gradient(135deg,#079fe8,#1767f2);
+  color:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:14px;
+  font-weight:800;
+}
+
+.compactFeatureList div:nth-child(2) span{
+  background:linear-gradient(135deg,#246cff,#7557f5);
+}
+
+.compactFeatureList div:nth-child(3) span{
+  background:linear-gradient(135deg,#15d0b0,#0ba9bf);
+}
+
+.compactFeatureList strong{
+  color:#102442;
+  font-size:14px;
+  line-height:1.1;
+}
+
+.compactFeatureList small{
+  color:#5f7788;
+  font-size:11.5px;
+}
+
+.compactDevices{
+  position:relative;
+  z-index:2;
+  height:118px;
+  margin-top:2px;
+}
+
+.compactLaptop{
   position:absolute;
   left:0;
-  bottom:6px;
-  width:84%;
-  height:122px;
+  bottom:0;
+  width:82%;
+  height:96px;
   padding:7px;
   border-radius:12px 12px 5px 5px;
   background:#05070c;
-  box-shadow:0 16px 26px rgba(15,28,45,.25);
+  box-shadow:0 14px 24px rgba(15,28,45,.22);
   transform:rotate(-2deg);
 }
 
-.futureLaptop::after{
+.compactLaptop::after{
   content:"";
   position:absolute;
-  left:10%;
-  right:10%;
-  bottom:-8px;
-  height:8px;
+  left:9%;
+  right:9%;
+  bottom:-7px;
+  height:7px;
   border-radius:0 0 14px 14px;
   background:linear-gradient(#8d949d,#5f6570);
 }
 
-.futureScreen{
-  position:relative;
+.compactLaptop > div{
   height:100%;
-  overflow:hidden;
   border-radius:7px;
-  padding:10px;
+  padding:11px;
   color:#fff;
   background:
-    linear-gradient(135deg,rgba(4,11,22,.98),rgba(3,8,17,.98));
+    radial-gradient(circle at 82% 48%, rgba(0,145,255,.48), transparent 25%),
+    linear-gradient(135deg,#071423,#020711);
 }
 
-.futureScreen::before{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:
-    linear-gradient(130deg, transparent 0 44%, rgba(0,135,255,.18) 45%, transparent 46%),
-    radial-gradient(circle at 80% 50%, rgba(0,145,255,.28), transparent 28%);
-}
-
-.futureNav{
-  position:relative;
-  z-index:2;
-  display:flex;
-  align-items:center;
-  gap:8px;
-  font-size:5px;
-  text-transform:uppercase;
-  margin-bottom:9px;
-}
-
-.futureNav strong{
-  margin-right:auto;
+.compactLaptop strong,
+.compactPhone strong{
+  display:block;
   font-size:8px;
-  text-transform:none;
+  margin-bottom:13px;
 }
 
-.futureScreen h4{
-  position:relative;
-  z-index:2;
-  max-width:130px;
-  font-size:13px;
-  line-height:1.18;
-  font-style:italic;
-  margin-bottom:8px;
+.compactLaptop h4{
+  font-size:14px;
+  line-height:1.15;
 }
 
-.futureScreen h4 span,
-.futurePhone span{
-  color:#129cff;
-}
-
-.futureCta{
-  position:relative;
-  z-index:2;
-  width:max-content;
-  padding:5px 8px;
-  border-radius:5px;
-  background:linear-gradient(90deg,#089ff0,#743df0);
-  font-size:6px;
-  font-weight:800;
-}
-
-.futureStats{
-  position:absolute;
-  left:10px;
-  bottom:9px;
-  z-index:2;
-  display:flex;
-  gap:5px;
-}
-
-.futureStats span{
-  width:34px;
-  padding:5px 0;
-  border-radius:5px;
-  text-align:center;
-  background:rgba(255,255,255,.07);
-  color:#fff;
-  font-size:8px;
-  font-weight:800;
-}
-
-.futurePlanet{
-  position:absolute;
-  right:-42px;
-  bottom:-52px;
-  width:125px;
-  height:125px;
-  border-radius:50%;
-  border:2px solid rgba(33,160,255,.7);
-  background:
-    radial-gradient(circle at 45% 40%, rgba(126,183,255,.35), transparent 15%),
-    radial-gradient(circle at 50% 50%, rgba(18,85,140,.75), #061120 58%, transparent 60%);
-  box-shadow:0 0 18px rgba(0,145,255,.8);
-}
-
-.futurePhone{
+.compactPhone{
   position:absolute;
   right:0;
-  bottom:0;
-  width:64px;
-  height:126px;
+  bottom:-2px;
+  width:58px;
+  height:108px;
   padding:5px;
-  border-radius:18px;
+  border-radius:16px;
   background:#05070c;
   border:3px solid #343b45;
-  box-shadow:0 14px 24px rgba(15,28,45,.30);
+  box-shadow:0 14px 24px rgba(15,28,45,.28);
 }
 
-.futurePhone > div{
+.compactPhone > div{
   height:100%;
-  border-radius:12px;
-  padding:10px 7px;
+  border-radius:11px;
+  padding:8px 5px;
   color:#fff;
   background:
-    radial-gradient(circle at 80% 35%, rgba(0,145,255,.22), transparent 28%),
+    radial-gradient(circle at 82% 36%, rgba(0,145,255,.2), transparent 30%),
     linear-gradient(150deg,#111b29,#03070d);
 }
 
-.futurePhone strong{
+.compactPhone strong{
   display:block;
-  font-size:7px;
-  margin-bottom:14px;
+  font-size:6px;
+  margin-bottom:8px;
 }
 
-.futurePhone p{
+.compactPhone h5{
   color:#fff;
-  font-size:9px;
-  line-height:1.15;
-  margin:0 0 9px;
-  font-weight:800;
+  font-size:8px;
+  line-height:1.12;
+  margin-bottom:7px;
 }
 
-.futurePhone small{
+.compactPhone small{
   display:block;
-  padding:5px 4px;
-  border-radius:5px;
-  text-align:center;
-  color:#fff;
-  background:linear-gradient(90deg,#089ff0,#743df0);
+  width:max-content;
+  max-width:100%;
+  padding:2px 4px;
+  margin-bottom:3px;
+  border-radius:999px;
+  color:#dff4ff;
+  background:rgba(255,255,255,.09);
   font-size:5px;
   font-weight:800;
 }
 
-.websiteHeroBtn{
+.compactProjectBtn{
   position:relative;
   z-index:2;
   color:#0aa6bf;
@@ -738,20 +720,20 @@ button{
     min-height:auto;
   }
 
-  .websiteHeroCard h3{
+  .websiteCompactCard h3{
     font-size:28px;
   }
 
-  .futureDevicePreview{
-    height:145px;
+  .compactDevices{
+    height:112px;
   }
 
-  .futureLaptop{
-    height:116px;
+  .compactLaptop{
+    height:90px;
   }
 
-  .futurePhone{
-    width:60px;
-    height:118px;
+  .compactPhone{
+    width:56px;
+    height:104px;
   }
 }

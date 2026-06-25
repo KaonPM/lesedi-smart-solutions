@@ -102,10 +102,10 @@ export default function Home() {
         <div className="cards">
           {/* WEBSITE FIRST */}
 
-          <article className="card websiteHeroCard">
-            <div className="cardTop">
-              <div className="websiteIcon">&lt;/&gt;</div>
-              <small>Live Service</small>
+          <article className="card websiteCompactCard">
+            <div className="compactBadge">
+              <span>◎</span>
+              Live Service
             </div>
 
             <h3>
@@ -114,54 +114,58 @@ export default function Home() {
             </h3>
 
             <p>
-              Modern websites and digital tools that help businesses grow
-              online.
+              We build modern websites and digital solutions designed to improve
+              visibility, generate enquiries and help businesses grow.
             </p>
 
-            <div className="futureDevicePreview">
-              <div className="futureLaptop">
-                <div className="futureScreen">
-                  <div className="futureNav">
-                    <strong>FutureWeb</strong>
-                    <span>Home</span>
-                    <span>Work</span>
-                  </div>
+            <div className="compactFeatureList">
+              <div>
+                <span>▣</span>
+                <strong>Websites</strong>
+                <small>Modern, responsive and fast</small>
+              </div>
+
+              <div>
+                <span>▰</span>
+                <strong>Platforms</strong>
+                <small>Custom solutions that scale</small>
+              </div>
+
+              <div>
+                <span>↗</span>
+                <strong>Leads</strong>
+                <small>Convert visitors into customers</small>
+              </div>
+            </div>
+
+            <div className="compactDevices">
+              <div className="compactLaptop">
+                <div>
+                  <strong>FutureWeb</strong>
 
                   <h4>
                     We Build
                     <br />
-                    Digital Experiences
-                    <br />
-                    That <span>Drive Growth</span>
+                    Digital Growth
                   </h4>
-
-                  <div className="futureCta">Our Services →</div>
-
-                  <div className="futureStats">
-                    <span>120+</span>
-                    <span>98%</span>
-                    <span>24/7</span>
-                  </div>
-
-                  <div className="futurePlanet" />
                 </div>
               </div>
 
-              <div className="futurePhone">
+              <div className="compactPhone">
                 <div>
                   <strong>FutureWeb</strong>
 
-                  <p>
-                    Smart
+                  <h5>
+                    We Build
                     <br />
-                    Solutions
+                    Digital
                     <br />
-                    For Your
-                    <br />
-                    <span>Business</span>
-                  </p>
+                    Growth
+                  </h5>
 
-                  <small>Get Started →</small>
+                  <small>Websites</small>
+                  <small>Platforms</small>
+                  <small>Leads</small>
                 </div>
               </div>
             </div>
@@ -170,7 +174,7 @@ export default function Home() {
               href="https://www.polokotombstones.co.za/"
               target="_blank"
               rel="noopener noreferrer"
-              className="websiteHeroBtn"
+              className="compactProjectBtn"
             >
               View Latest Project →
             </a>
