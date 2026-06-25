@@ -103,22 +103,20 @@ export default function Home() {
           {/* WEBSITE FIRST */}
 
           <article className="card websiteReferenceCard">
-            <div className="cardTop">
-              <div />
-              <small>Live Solution</small>
-            </div>
+            <div className="cardTop websiteCardTop">
+  <h3 className="websiteEvolutionHeading">
+    Website & Digital Solutions
+  </h3>
 
-            <div className="websiteReferenceGrid">
-              <div className="websiteReferenceCopy">
-                <h3 className="websiteEvolutionHeading">
-                    Website & Digital Solutions
-                </h3>
+  <small>Live Solution</small>
+</div>
 
-                <p>
-                  We build modern websites and digital solutions designed to
-                  improve visibility, generate enquiries and help businesses
-                  grow.
-                </p>
+<div className="websiteReferenceGrid">
+  <div className="websiteReferenceCopy">
+    <p>
+      We build modern websites and digital solutions designed to
+      improve visibility, generate enquiries and help businesses grow.
+    </p>
 
                 <a
                   href="https://www.polokotombstones.co.za/"

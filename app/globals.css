@@ -977,3 +977,57 @@ button{
   background-clip:text;
   -webkit-text-fill-color:transparent;
 }
+.websiteCardTop{
+  align-items:flex-start;
+}
+
+.websiteEvolutionHeading{
+  margin:0;
+  max-width:260px;
+
+  font-size:40px;
+  line-height:1;
+  font-weight:900;
+  letter-spacing:-1.5px;
+
+  background:linear-gradient(
+    135deg,
+    #00b5ff,
+    #3b82f6,
+    #8b5cf6
+  );
+
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.referencePhone{
+  overflow:hidden;
+}
+
+.referencePhone strong{
+  font-size:6px;
+}
+
+.referencePhone h5{
+  font-size:7px;
+  line-height:1.1;
+  margin:4px 0;
+}
+
+.referencePhone p{
+  font-size:5px;
+  line-height:1.2;
+  margin:4px 0;
+}
+
+.referencePhone small{
+  font-size:5px;
+}
+.websiteReferenceCopy{
+  padding-top:8px;
+}
+
+.websiteReferenceCopy p{
+  margin-top:12px;
+}
