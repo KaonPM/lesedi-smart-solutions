@@ -110,7 +110,9 @@ export default function Home() {
 
             <div className="websiteReferenceGrid">
               <div className="websiteReferenceCopy">
-                <h3>Website & Digital Solutions</h3>
+                <h3 className="websiteEvolutionHeading">
+                    Website & Digital Solutions
+                </h3>
 
                 <p>
                   We build modern websites and digital solutions designed to
