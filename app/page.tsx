@@ -103,14 +103,14 @@ export default function Home() {
           {/* WEBSITE FIRST */}
 
           <article className="card websiteReferenceCard">
-            <div className="referenceBadge">◎ Live Service</div>
+            <div className="cardTop">
+              <div />
+              <small>Live Solution</small>
+            </div>
 
             <div className="websiteReferenceGrid">
               <div className="websiteReferenceCopy">
-                <h3>
-                  Website &<br />
-                  <span>Digital Solutions</span>
-                </h3>
+                <h3>Website & Digital Solutions</h3>
 
                 <p>
                   We build modern websites and digital solutions designed to
@@ -145,7 +145,9 @@ export default function Home() {
                       performance.
                     </p>
 
-                    <div className="referenceButton">Our Services →</div>
+                    <div className="referenceButton">
+                      Our Services →
+                    </div>
 
                     <div className="referencePlanet" />
                   </div>
@@ -161,7 +163,9 @@ export default function Home() {
                       For Your <span>Business</span>
                     </h5>
 
-                    <p>Websites and digital tools that help you grow.</p>
+                    <p>
+                      Websites and digital tools that help you grow.
+                    </p>
 
                     <small>Get Started →</small>
                   </div>
@@ -187,8 +191,8 @@ export default function Home() {
 
             <p>
               DailyBloom helps preschools manage learners, attendance, events,
-              daily summaries, communication and school operations from one clean
-              platform.
+              daily summaries, communication and school operations from one
+              clean platform.
             </p>
 
             <a
@@ -297,9 +301,7 @@ export default function Home() {
 
       <div className="legalBar">
         <p>Business Registration Number: 2026/315790/07</p>
-
         <p>Information Regulator Registration Number: 2026-010141</p>
-
         <p>© 2026 Lesedi Smart Solutions. All rights reserved.</p>
       </div>
     </main>
