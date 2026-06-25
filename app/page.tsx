@@ -100,142 +100,7 @@ export default function Home() {
         </div>
 
         <div className="cards">
-          {/* WEBSITE FIRST */}
-
-          <article className="card webCardPro">
-            <div className="webCardCopy">
-              <div className="serviceBadge">
-                <span>◎</span>
-                Live Service
-              </div>
-
-              <h3>
-                Website &<br />
-                Digital Solutions
-              </h3>
-
-              <p>
-                Modern websites and digital solutions designed to improve
-                visibility, generate enquiries and help businesses grow.
-              </p>
-
-              <div className="webFeatureList">
-                <div>
-                  <span className="featureIcon">▣</span>
-                  <strong>Websites</strong>
-                  <small>Modern, responsive and fast</small>
-                </div>
-
-                <div>
-                  <span className="featureIcon purple">▰</span>
-                  <strong>Platforms</strong>
-                  <small>Custom solutions that scale</small>
-                </div>
-
-                <div>
-                  <span className="featureIcon teal">↗</span>
-                  <strong>Leads</strong>
-                  <small>Convert visitors into customers</small>
-                </div>
-              </div>
-
-              <a
-                href="https://www.polokotombstones.co.za/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="webProjectBtn"
-              >
-                View Latest Project →
-              </a>
-            </div>
-
-            <div className="webDevices">
-              <div className="laptopMockup">
-                <div className="laptopScreen">
-                  <div className="mockNav">
-                    <strong>FutureWeb</strong>
-                    <span>Home</span>
-                    <span>Services</span>
-                    <span>Work</span>
-                    <button>Get Started</button>
-                  </div>
-
-                  <div className="mockHero">
-                    <h4>
-                      We Build
-                      <br />
-                      Digital Experiences
-                      <br />
-                      That <span>Drive Growth</span>
-                    </h4>
-
-                    <p>
-                      Next-generation websites and digital solutions built for
-                      performance, scale and results.
-                    </p>
-
-                    <button>Our Services →</button>
-
-                    <div className="mockStats">
-                      <div>
-                        <strong>120+</strong>
-                        <small>Projects</small>
-                      </div>
-
-                      <div>
-                        <strong>98%</strong>
-                        <small>Satisfaction</small>
-                      </div>
-
-                      <div>
-                        <strong>24/7</strong>
-                        <small>Support</small>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="planetGlow" />
-                </div>
-
-                <div className="laptopBase" />
-              </div>
-
-              <div className="phoneMockup">
-                <div className="phoneScreen">
-                  <div className="phoneNav">
-                    <strong>FutureWeb</strong>
-                    <span>☰</span>
-                  </div>
-
-                  <h5>
-                    Smart Solutions
-                    <br />
-                    For Your <span>Business</span>
-                  </h5>
-
-                  <p>
-                    Websites, platforms and digital tools that help you grow.
-                  </p>
-
-                  <button>Get Started →</button>
-
-                  <div className="phoneTiles">
-                    <span>Design</span>
-                    <span>Develop</span>
-                    <span>Deploy</span>
-                  </div>
-
-                  <h6>
-                    Built for <span>today.</span>
-                    <br />
-                    Ready for <span>tomorrow.</span>
-                  </h6>
-                </div>
-              </div>
-            </div>
-          </article>
-
-          {/* DAILYBLOOM SECOND */}
+          {/* DAILYBLOOM FIRST */}
 
           <article className="card daily">
             <div className="cardTop">
@@ -265,7 +130,7 @@ export default function Home() {
             </a>
           </article>
 
-          {/* WAGEFLOW LAST */}
+          {/* WAGEFLOW SECOND */}
 
           <article className="card wage">
             <div className="cardTop">
@@ -291,6 +156,82 @@ export default function Home() {
               rel="noopener noreferrer"
             >
               View WageFlow →
+            </a>
+          </article>
+
+          {/* WEBSITE THIRD */}
+
+          <article className="card websiteSolutionCard">
+            <div className="websiteCardTop">
+              <div className="websiteIcon">&lt;/&gt;</div>
+
+              <small>
+                Live
+                <br />
+                Service
+              </small>
+            </div>
+
+            <h3>
+              Website &<br />
+              <span>Digital Solutions</span>
+            </h3>
+
+            <p>
+              We help businesses improve online visibility, attract customers,
+              and generate enquiries through modern websites and tailored
+              digital solutions.
+            </p>
+
+            <div className="websiteTags">
+              <span>▣ Web Design</span>
+              <span>↗ Lead Generation</span>
+              <span>⚙ Custom Systems</span>
+            </div>
+
+            <div className="websitePreview">
+              <div className="previewLaptop">
+                <div className="previewScreen">
+                  <strong>POLOKO</strong>
+
+                  <h4>
+                    Honouring Memories,
+                    <br />
+                    Preserving Legacies
+                  </h4>
+
+                  <p>
+                    Quality tombstones and memorials crafted with care and
+                    respect.
+                  </p>
+
+                  <button>View Our Products</button>
+                </div>
+              </div>
+
+              <div className="previewPhone">
+                <div>
+                  <strong>POLOKO</strong>
+
+                  <h5>
+                    Honouring
+                    <br />
+                    Memories,
+                    <br />
+                    Preserving
+                    <br />
+                    Legacies
+                  </h5>
+                </div>
+              </div>
+            </div>
+
+            <a
+              href="https://www.polokotombstones.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View Latest Project →
             </a>
           </article>
         </div>
