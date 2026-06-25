@@ -102,82 +102,72 @@ export default function Home() {
         <div className="cards">
           {/* WEBSITE FIRST */}
 
-          <article className="card websiteCompactCard">
-            <div className="compactBadge">
-              <span>◎</span>
-              Live Service
-            </div>
+          <article className="card websiteReferenceCard">
+            <div className="referenceBadge">◎ Live Service</div>
 
-            <h3>
-              Website &<br />
-              <span>Digital Solutions</span>
-            </h3>
+            <div className="websiteReferenceGrid">
+              <div className="websiteReferenceCopy">
+                <h3>
+                  Website &<br />
+                  <span>Digital Solutions</span>
+                </h3>
 
-            <p>
-              We build modern websites and digital solutions designed to improve
-              visibility, generate enquiries and help businesses grow.
-            </p>
+                <p>
+                  We build modern websites and digital solutions designed to
+                  improve visibility, generate enquiries and help businesses
+                  grow.
+                </p>
 
-            <div className="compactFeatureList">
-              <div>
-                <span>▣</span>
-                <strong>Websites</strong>
-                <small>Modern, responsive and fast</small>
+                <a
+                  href="https://www.polokotombstones.co.za/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  View Latest Project →
+                </a>
               </div>
 
-              <div>
-                <span>▰</span>
-                <strong>Platforms</strong>
-                <small>Custom solutions that scale</small>
-              </div>
+              <div className="referenceDeviceScene">
+                <div className="referenceLaptop">
+                  <div className="referenceScreen">
+                    <strong>FutureWeb</strong>
 
-              <div>
-                <span>↗</span>
-                <strong>Leads</strong>
-                <small>Convert visitors into customers</small>
-              </div>
-            </div>
+                    <h4>
+                      We Build
+                      <br />
+                      Digital Experiences
+                      <br />
+                      That <span>Drive Growth</span>
+                    </h4>
 
-            <div className="compactDevices">
-              <div className="compactLaptop">
-                <div>
-                  <strong>FutureWeb</strong>
+                    <p>
+                      Next-generation websites and digital solutions built for
+                      performance.
+                    </p>
 
-                  <h4>
-                    We Build
-                    <br />
-                    Digital Growth
-                  </h4>
+                    <div className="referenceButton">Our Services →</div>
+
+                    <div className="referencePlanet" />
+                  </div>
+                </div>
+
+                <div className="referencePhone">
+                  <div>
+                    <strong>FutureWeb</strong>
+
+                    <h5>
+                      Smart Solutions
+                      <br />
+                      For Your <span>Business</span>
+                    </h5>
+
+                    <p>Websites and digital tools that help you grow.</p>
+
+                    <small>Get Started →</small>
+                  </div>
                 </div>
               </div>
-
-              <div className="compactPhone">
-                <div>
-                  <strong>FutureWeb</strong>
-
-                  <h5>
-                    We Build
-                    <br />
-                    Digital
-                    <br />
-                    Growth
-                  </h5>
-
-                  <small>Websites</small>
-                  <small>Platforms</small>
-                  <small>Leads</small>
-                </div>
-              </div>
             </div>
-
-            <a
-              href="https://www.polokotombstones.co.za/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="compactProjectBtn"
-            >
-              View Latest Project →
-            </a>
           </article>
 
           {/* DAILYBLOOM SECOND */}

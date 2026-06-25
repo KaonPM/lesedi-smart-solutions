@@ -737,3 +737,231 @@ button{
     height:104px;
   }
 }
+.websiteReferenceCard{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 92% 12%, rgba(102,126,255,.16), transparent 25%),
+    linear-gradient(135deg,#ffffff 0%,#fbfdff 58%,#f1f7ff 100%);
+}
+
+.websiteReferenceCard::before{
+  content:"";
+  position:absolute;
+  right:-58px;
+  top:-58px;
+  width:165px;
+  height:165px;
+  border-radius:50%;
+  background:rgba(10,166,191,.08);
+}
+
+.referenceBadge{
+  position:relative;
+  z-index:2;
+  width:max-content;
+  background:#edf7fb;
+  color:#078dde;
+  padding:8px 14px;
+  border-radius:12px;
+  font-size:12px;
+  font-weight:800;
+  letter-spacing:1.8px;
+  text-transform:uppercase;
+}
+
+.websiteReferenceGrid{
+  position:relative;
+  z-index:2;
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:14px;
+  align-items:center;
+}
+
+.websiteReferenceCopy h3{
+  font-size:28px;
+  line-height:1.05;
+  margin:0 0 12px;
+  color:#102442;
+}
+
+.websiteReferenceCopy h3 span{
+  background:linear-gradient(90deg,#079fe8,#7657f5);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.websiteReferenceCopy p{
+  color:#4f6677;
+  font-size:13.5px;
+  line-height:1.45;
+  margin:0 0 16px;
+}
+
+.websiteReferenceCopy a{
+  color:#0aa6bf;
+  font-weight:800;
+  font-size:15px;
+}
+
+.referenceDeviceScene{
+  position:relative;
+  min-height:180px;
+}
+
+.referenceLaptop{
+  position:absolute;
+  right:18px;
+  top:18px;
+  width:170px;
+  height:112px;
+  padding:7px;
+  border-radius:12px 12px 5px 5px;
+  background:#05070c;
+  box-shadow:0 14px 24px rgba(15,28,45,.25);
+  transform:rotate(-4deg);
+}
+
+.referenceLaptop::after{
+  content:"";
+  position:absolute;
+  left:12%;
+  right:12%;
+  bottom:-7px;
+  height:7px;
+  border-radius:0 0 14px 14px;
+  background:linear-gradient(#8d949d,#5f6570);
+}
+
+.referenceScreen{
+  position:relative;
+  height:100%;
+  overflow:hidden;
+  border-radius:7px;
+  padding:9px;
+  color:#fff;
+  background:linear-gradient(135deg,#04101f,#020711);
+}
+
+.referenceScreen::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(130deg, transparent 0 44%, rgba(0,135,255,.18) 45%, transparent 46%),
+    radial-gradient(circle at 78% 50%, rgba(0,145,255,.28), transparent 28%);
+}
+
+.referenceScreen strong{
+  position:relative;
+  z-index:2;
+  display:block;
+  font-size:7px;
+  margin-bottom:8px;
+}
+
+.referenceScreen h4{
+  position:relative;
+  z-index:2;
+  max-width:95px;
+  font-size:10px;
+  line-height:1.18;
+  font-style:italic;
+  margin-bottom:5px;
+}
+
+.referenceScreen h4 span,
+.referencePhone span{
+  color:#129cff;
+}
+
+.referenceScreen p{
+  position:relative;
+  z-index:2;
+  max-width:95px;
+  color:#d9e6ff;
+  font-size:5px;
+  line-height:1.35;
+  margin:0 0 5px;
+}
+
+.referenceButton{
+  position:relative;
+  z-index:2;
+  width:max-content;
+  padding:4px 6px;
+  border-radius:5px;
+  background:linear-gradient(90deg,#089ff0,#743df0);
+  font-size:5px;
+  font-weight:800;
+}
+
+.referencePlanet{
+  position:absolute;
+  right:-34px;
+  bottom:-38px;
+  width:92px;
+  height:92px;
+  border-radius:50%;
+  border:2px solid rgba(33,160,255,.7);
+  background:
+    radial-gradient(circle at 45% 40%, rgba(126,183,255,.35), transparent 15%),
+    radial-gradient(circle at 50% 50%, rgba(18,85,140,.75), #061120 58%, transparent 60%);
+  box-shadow:0 0 16px rgba(0,145,255,.8);
+}
+
+.referencePhone{
+  position:absolute;
+  right:0;
+  top:54px;
+  width:54px;
+  height:112px;
+  padding:4px;
+  border-radius:16px;
+  background:#05070c;
+  border:3px solid #343b45;
+  box-shadow:0 12px 22px rgba(15,28,45,.30);
+}
+
+.referencePhone > div{
+  height:100%;
+  border-radius:11px;
+  padding:8px 5px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 80% 35%, rgba(0,145,255,.22), transparent 28%),
+    linear-gradient(150deg,#111b29,#03070d);
+}
+
+.referencePhone strong{
+  display:block;
+  font-size:6px;
+  margin-bottom:10px;
+}
+
+.referencePhone h5{
+  color:#fff;
+  font-size:7px;
+  line-height:1.15;
+  margin-bottom:6px;
+}
+
+.referencePhone p{
+  color:#d9e6ff;
+  font-size:4.5px;
+  line-height:1.25;
+  margin:0 0 6px;
+}
+
+.referencePhone small{
+  display:block;
+  padding:4px 3px;
+  border-radius:5px;
+  text-align:center;
+  color:#fff;
+  background:linear-gradient(90deg,#089ff0,#743df0);
+  font-size:4.5px;
+  font-weight:800;
+}
