@@ -104,27 +104,26 @@ export default function Home() {
 
           <article className="card websiteReferenceCard">
             <div className="cardTop websiteCardTop">
-  <h3 className="websiteEvolutionHeading">
-    Website & Digital Solutions
-  </h3>
+              <h3 className="websiteEvolutionHeading">
+                Website & Digital Solutions
+              </h3>
 
-  <small>Live Service</small>
-</div>
+              <small>Live Service</small>
+            </div>
 
-<div className="websiteReferenceGrid">
-  <div className="websiteReferenceCopy">
-    <p>
-      We build modern websites and digital solutions designed to
-      improve visibility, generate enquiries and help businesses grow.
-    </p>
+            <div className="websiteReferenceGrid">
+              <div className="websiteReferenceCopy">
+                <p>
+                  We build modern websites and digital solutions designed to
+                  improve visibility, generate enquiries and help businesses
+                  grow.
+                </p>
 
-                <a
-                  href="https://www.polokotombstones.co.za/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  View Latest Project →
-                </a>
+                <div className="referenceChips">
+                  <span>Custom-Built</span>
+                  <span>Mobile-First</span>
+                  <span>SEO Ready</span>
+                </div>
               </div>
 
               <div className="referenceDeviceScene">
@@ -171,6 +170,15 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+
+              <a
+                href="https://www.polokotombstones.co.za/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="referenceCardLink"
+              >
+                View Latest Project →
+              </a>
             </div>
           </article>
 

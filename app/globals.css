@@ -584,6 +584,9 @@ button{
   z-index:2;
   display:grid;
   grid-template-columns:1.1fr 170px;
+  grid-template-areas:
+    "text image"
+    "link image";
   gap:8px;
   align-items:center;
   flex:1;
@@ -593,9 +596,9 @@ button{
 
 /* TEXT BLOCK */
 .websiteReferenceCopy{
+  grid-area:text;
   display:flex;
   flex-direction:column;
-  height:100%;
 }
 
 .websiteReferenceCopy h3{
@@ -631,8 +634,9 @@ button{
   white-space:nowrap;
 }
 
-.websiteReferenceCopy a{
-  margin-top:auto;
+.referenceCardLink{
+  grid-area:link;
+  align-self:start;
   font-size:15px;
   font-weight:700;
   color:#0aa6bf;
@@ -641,6 +645,7 @@ button{
 
 /* DEVICE SCENE — KEY FIX */
 .referenceDeviceScene{
+  grid-area:image;
   position:relative;
   width:170px;
   min-height:160px;
@@ -820,6 +825,10 @@ button{
   }
   .websiteReferenceGrid{
     grid-template-columns:1fr;
+    grid-template-areas:
+      "text"
+      "image"
+      "link";
     gap:8px;
     margin-top:0;
   }
