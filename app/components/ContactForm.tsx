@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function ContactForm() {
   const [status, setStatus] = useState("");
@@ -35,11 +36,15 @@ export default function ContactForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div className="formRow">
-        <input name="name" placeholder="Your name" required />
-        <input name="email" type="email" placeholder="Your email" required />
+        <label className="srOnly" htmlFor="name">Your name</label>
+        <input id="name" name="name" placeholder="Your name" required />
+        <label className="srOnly" htmlFor="email">Your email</label>
+        <input id="email" name="email" type="email" placeholder="Your email" required />
       </div>
 
+      <label className="srOnly" htmlFor="message">How can we help?</label>
       <textarea
+        id="message"
         name="message"
         placeholder="How can we help?"
         rows={4}
@@ -47,6 +52,8 @@ export default function ContactForm() {
       />
 
       <button type="submit">Send Enquiry</button>
+
+      <p className="formPrivacy">By submitting, you agree that we may use your details to respond to your enquiry, as described in our <Link href="/legal/privacy-policy">Privacy Policy</Link>.</p>
 
       {status && <span>{status}</span>}
     </form>

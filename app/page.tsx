@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -144,9 +145,7 @@ export default function Home() {
                       performance.
                     </p>
 
-                    <div className="referenceButton">
-                      Our Services →
-                    </div>
+                    <div className="referenceButton">Website concept</div>
 
                     <div className="referencePlanet" />
                   </div>
@@ -166,7 +165,7 @@ export default function Home() {
                       Websites and digital tools that help you grow.
                     </p>
 
-                    <small>Get Started →</small>
+                    <small>Built for growth</small>
                   </div>
                 </div>
               </div>
@@ -266,7 +265,7 @@ export default function Home() {
 
             <div>
               <strong>Email</strong>
-              <p>info@lesedismartsolutions.co.za</p>
+              <p><a href="mailto:info@lesedismartsolutions.co.za">info@lesedismartsolutions.co.za</a></p>
             </div>
           </div>
 
@@ -275,7 +274,7 @@ export default function Home() {
 
             <div>
               <strong>Phone</strong>
-              <p>076 361 6044</p>
+              <p><a href="tel:+27763616044">076 361 6044</a></p>
             </div>
           </div>
 
@@ -284,7 +283,7 @@ export default function Home() {
 
             <div>
               <strong>WhatsApp</strong>
-              <p>076 361 6044</p>
+              <p><a href="https://wa.me/27763616044" target="_blank" rel="noopener noreferrer">076 361 6044</a></p>
             </div>
           </div>
         </div>
@@ -296,22 +295,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer className="footer">
-        <div className="footerLogo">
-          <Image
-            src="/lesedi-logo.png"
-            alt="Lesedi Smart Solutions"
-            width={170}
-            height={70}
-          />
-        </div>
-      </footer>
-
-      <div className="legalBar">
-        <p>Business Registration Number: 2026/315790/07</p>
-        <p>Information Regulator Registration Number: 2026-010141</p>
-        <p>© 2026 Lesedi Smart Solutions. All rights reserved.</p>
-      </div>
+      <Footer />
     </main>
   );
 }
