@@ -56,10 +56,11 @@ export default function Home() {
         <div className="heroLogoCard">
           <Image
             src="/lesedi-logo.png"
-            alt="Lesedi Smart Solutions"
+            alt=""
             width={620}
             height={250}
             priority
+            aria-hidden="true"
           />
         </div>
       </section>
@@ -101,84 +102,39 @@ export default function Home() {
         </div>
 
         <div className="cards">
-          {/* WEBSITE FIRST */}
+          {/* GOQ FIRST */}
 
-          <article className="card websiteReferenceCard">
-            <div className="cardTop websiteCardTop">
-              <h3 className="websiteEvolutionHeading">
-                Website & Digital Solutions
-              </h3>
+          <article className="card goq">
+            <div className="cardTop">
+              <Image
+                src="/goq-logo.png"
+                alt="GoQ"
+                width={230}
+                height={80}
+                className="productLogo goqLogo"
+              />
 
-              <small>Live Service</small>
+              <small>Live Solution</small>
             </div>
 
-            <div className="websiteReferenceGrid">
-              <div className="websiteReferenceCopy">
-                <p>
-                  We build modern websites and digital solutions designed to
-                  improve visibility, generate enquiries and help businesses
-                  grow.
-                </p>
+            <p>
+              GoQ helps service businesses manage appointments, availability,
+              services and customer bookings from one simple platform.
+            </p>
 
-                <div className="referenceChips">
-                  <span>Custom-Built</span>
-                  <span>Mobile-First</span>
-                  <span>SEO Ready</span>
-                </div>
-              </div>
-
-              <div className="referenceDeviceScene">
-                <div className="referenceLaptop">
-                  <div className="referenceScreen">
-                    <strong>FutureWeb</strong>
-
-                    <h4>
-                      We Build
-                      <br />
-                      Digital Experiences
-                      <br />
-                      That <span>Drive Growth</span>
-                    </h4>
-
-                    <p>
-                      Next-generation websites and digital solutions built for
-                      performance.
-                    </p>
-
-                    <div className="referenceButton">Website concept</div>
-
-                    <div className="referencePlanet" />
-                  </div>
-                </div>
-
-                <div className="referencePhone">
-                  <div>
-                    <strong>FutureWeb</strong>
-
-                    <h5>
-                      Smart Solutions
-                      <br />
-                      For Your <span>Business</span>
-                    </h5>
-
-                    <p>
-                      Websites and digital tools that help you grow.
-                    </p>
-
-                    <small>Built for growth</small>
-                  </div>
-                </div>
-              </div>
-
-              <a
-                href="https://www.polokotombstones.co.za/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="referenceCardLink"
-              >
-                View Latest Project →
-              </a>
+            <div className="referenceChips">
+              <span>Free Marketplace Listing</span>
+              <span>No Transaction Charges</span>
+              <span>Online Booking</span>
             </div>
+
+            <a
+              href="https://www.goq.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit GoQ →
+            </a>
           </article>
 
           {/* DAILYBLOOM SECOND */}
@@ -201,6 +157,12 @@ export default function Home() {
               daily summaries, communication and school operations from one
               clean platform.
             </p>
+
+            <div className="referenceChips">
+              <span>Learner Management</span>
+              <span>Attendance Tracking</span>
+              <span>Parent Communication</span>
+            </div>
 
             <a
               href="https://www.dailybloom.co.za/"
@@ -230,6 +192,12 @@ export default function Home() {
               WageFlow helps small businesses calculate pay, generate payslips,
               manage staff records and keep workforce information organised.
             </p>
+
+            <div className="referenceChips">
+              <span>Payroll Calculations</span>
+              <span>Payslip Generation</span>
+              <span>Staff Records</span>
+            </div>
 
             <a
               href="https://wageflow.lesedismartsolutions.co.za/"

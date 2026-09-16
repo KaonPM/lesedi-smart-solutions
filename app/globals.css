@@ -81,10 +81,14 @@ a{
   border-radius:26px;
   background:linear-gradient(135deg,#eef8f7,#ffffff,#eef7fb);
   border:1px solid #e5efef;
-  display:grid;
-  grid-template-columns:1.1fr 1fr;
-  gap:34px;
-  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+
+.heroText{
+  position:relative;
+  z-index:1;
+  max-width:760px;
 }
 
 .badge{
@@ -99,9 +103,9 @@ a{
 }
 
 .heroText h1{
-  font-size:68px;
-  line-height:0.98;
-  letter-spacing:-2px;
+  font-size:54px;
+  line-height:1.04;
+  letter-spacing:-1.5px;
   margin-bottom:20px;
   color:#1a3150;
 }
@@ -142,18 +146,22 @@ a{
 }
 
 .heroLogoCard{
-  background:#ffffff;
-  border:1px solid #e7efef;
-  border-radius:22px;
-  padding:26px;
-  box-shadow:0 12px 28px rgba(12,60,80,0.08);
+  position:absolute;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  padding-right:34px;
+  pointer-events:none;
 }
 
 .heroLogoCard img{
-  width:100%;
+  width:min(68%,620px);
   height:auto;
   object-fit:contain;
   display:block;
+  opacity:0.13;
+  filter:grayscale(1);
 }
 
 /* TRUST STRIP */
@@ -209,7 +217,7 @@ a{
 .sectionIntro h2{
   font-size:34px;
   line-height:1.18;
-  max-width:520px;
+  white-space:nowrap;
 }
 
 .sectionIntro h2 span{
@@ -233,6 +241,12 @@ a{
   flex-direction:column;
   gap:16px;
   min-height:360px;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:0 16px 34px rgba(10,30,40,0.10);
+  border-color:#d5e7e5;
 }
 
 .cardTop{
@@ -275,6 +289,11 @@ a{
   object-fit:contain;
   object-position:left center;
   display:block;
+}
+
+.goqLogo{
+  width:190px;
+  object-position:left center;
 }
 
 /* LOWER GRID */
@@ -413,7 +432,7 @@ button{
   }
 
   .heroText h1{
-    font-size:54px;
+    font-size:46px;
   }
 }
 
@@ -458,7 +477,21 @@ button{
   }
 
   .heroText h1{
-    font-size:42px;
+    font-size:38px;
+  }
+
+  .heroLogoCard{
+    justify-content:center;
+    padding-right:0;
+  }
+
+  .heroLogoCard img{
+    width:120%;
+    opacity:0.09;
+  }
+
+  .sectionIntro h2{
+    white-space:normal;
   }
 
   .heroText p:not(.badge){
