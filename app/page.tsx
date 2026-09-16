@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ContactForm from "./components/ContactForm";
+import BottomInfoPanels from "./components/BottomInfoPanels";
 import Footer from "./components/Footer";
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       <header className="nav">
         <a href="#" className="navLogo">
           <Image
-            src="/lesedi-logo.png"
+            src="/lesedi-transparent-logo.png"
             alt="Lesedi Smart Solutions"
             width={260}
             height={95}
@@ -55,7 +55,7 @@ export default function Home() {
 
         <div className="heroLogoCard">
           <Image
-            src="/lesedi-logo.png"
+            src="/lesedi-transparent-logo.png"
             alt=""
             width={620}
             height={250}
@@ -153,9 +153,9 @@ export default function Home() {
             </div>
 
             <p>
-              DailyBloom helps preschools manage learners, attendance, events,
-              daily summaries, communication and school operations from one
-              clean platform.
+              DailyBloom helps ECD centres manage enrolment, learners,
+              attendance, parent communication, learning and compliance from
+              one simple digital platform.
             </p>
 
             <div className="referenceChips">
@@ -210,64 +210,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="bottomGrid">
-        <details id="about" className="panel collapsiblePanel">
-          <summary>About Us</summary>
-
-          <div className="collapsibleContent">
-            <p>
-              Lesedi Smart Solutions is a South African digital solutions company
-              focused on building simple, useful and affordable technology.
-            </p>
-
-            <p>
-              Our solutions are designed for real people and real organisations
-              that need better ways to manage daily work.
-            </p>
-          </div>
-        </details>
-
-        <details id="contact" className="panel collapsiblePanel">
-          <summary>Get in Touch</summary>
-
-          <div className="collapsibleContent">
-            <div className="contactItem">
-              <span>✉️</span>
-
-              <div>
-                <strong>Email</strong>
-                <p><a href="mailto:info@lesedismartsolutions.co.za">info@lesedismartsolutions.co.za</a></p>
-              </div>
-            </div>
-
-            <div className="contactItem">
-              <span>📞</span>
-
-              <div>
-                <strong>Phone</strong>
-                <p><a href="tel:+27763616044">076 361 6044</a></p>
-              </div>
-            </div>
-
-            <div className="contactItem">
-              <span>💬</span>
-
-              <div>
-                <strong>WhatsApp</strong>
-                <p><a href="https://wa.me/27763616044" target="_blank" rel="noopener noreferrer">076 361 6044</a></p>
-              </div>
-            </div>
-          </div>
-        </details>
-
-        <details className="panel collapsiblePanel">
-          <summary>Send us a Message</summary>
-
-          <div className="collapsibleContent">
-            <ContactForm />
-          </div>
-        </details>
-      </section>
+      <BottomInfoPanels />
 
       <Footer />
     </main>
