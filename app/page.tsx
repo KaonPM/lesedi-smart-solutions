@@ -146,7 +146,7 @@ export default function Home() {
                 alt="DailyBloom"
                 width={230}
                 height={80}
-                className="productLogo dailyLogo"
+                className="productLogo"
               />
 
               <small>Live Solution</small>
