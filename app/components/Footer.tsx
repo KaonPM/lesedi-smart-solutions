@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { legalBusinessName, policies, registeredAddress, supportEmail } from "./legal";
+import { legalBusinessName, policies, supportEmail } from "./legal";
 
 export default function Footer() {
   return (
@@ -30,7 +30,11 @@ export default function Footer() {
         <address className="footerContact">
           <p className="footerLabel">Support</p>
           <a href={`mailto:${supportEmail}`}>{supportEmail}</a>
-          <span>{registeredAddress}</span>
+          <a href="tel:+27763616044">076 361 6044</a>
+          <a href="https://wa.me/27763616044" target="_blank" rel="noopener noreferrer">
+            WhatsApp: 076 361 6044
+          </a>
+          <span>Albertsdal, Alberton</span>
         </address>
       </div>
 

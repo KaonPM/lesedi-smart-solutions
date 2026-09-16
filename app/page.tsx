@@ -44,7 +44,7 @@ export default function Home() {
 
           <div className="heroActions">
             <a href="#solutions" className="primaryBtn">
-              Explore Solutions →
+              Explore Solutions
             </a>
 
             <a href="#about" className="secondaryBtn">
@@ -133,7 +133,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Visit GoQ →
+              Visit GoQ
             </a>
           </article>
 
@@ -146,7 +146,7 @@ export default function Home() {
                 alt="DailyBloom"
                 width={230}
                 height={80}
-                className="productLogo"
+                className="productLogo dailyLogo"
               />
 
               <small>Live Solution</small>
@@ -169,7 +169,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View DailyBloom →
+              View DailyBloom
             </a>
           </article>
 
@@ -204,7 +204,7 @@ export default function Home() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              View WageFlow →
+              View WageFlow
             </a>
           </article>
         </div>

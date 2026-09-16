@@ -290,12 +290,17 @@ a{
   width:200px;
   height:68px;
   object-fit:contain;
-  object-position:center;
+  object-position:left center;
   display:block;
 }
 
 .goqLogo{
   width:170px;
+  margin-left:-18px;
+}
+
+.dailyLogo{
+  margin-left:-52px;
 }
 
 .goq .cardTop small{
