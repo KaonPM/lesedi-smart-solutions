@@ -211,56 +211,62 @@ export default function Home() {
       </section>
 
       <section className="bottomGrid">
-        <div id="about" className="panel aboutPanel">
-          <h3>About Us</h3>
+        <details id="about" className="panel collapsiblePanel">
+          <summary>About Us</summary>
 
-          <p>
-            Lesedi Smart Solutions is a South African digital solutions company
-            focused on building simple, useful and affordable technology.
-          </p>
+          <div className="collapsibleContent">
+            <p>
+              Lesedi Smart Solutions is a South African digital solutions company
+              focused on building simple, useful and affordable technology.
+            </p>
 
-          <p>
-            Our solutions are designed for real people and real organisations
-            that need better ways to manage daily work.
-          </p>
-        </div>
+            <p>
+              Our solutions are designed for real people and real organisations
+              that need better ways to manage daily work.
+            </p>
+          </div>
+        </details>
 
-        <div id="contact" className="panel contactPanel">
-          <h3>Get in Touch</h3>
+        <details id="contact" className="panel collapsiblePanel">
+          <summary>Get in Touch</summary>
 
-          <div className="contactItem">
-            <span>✉️</span>
+          <div className="collapsibleContent">
+            <div className="contactItem">
+              <span>✉️</span>
 
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:info@lesedismartsolutions.co.za">info@lesedismartsolutions.co.za</a></p>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:info@lesedismartsolutions.co.za">info@lesedismartsolutions.co.za</a></p>
+              </div>
+            </div>
+
+            <div className="contactItem">
+              <span>📞</span>
+
+              <div>
+                <strong>Phone</strong>
+                <p><a href="tel:+27763616044">076 361 6044</a></p>
+              </div>
+            </div>
+
+            <div className="contactItem">
+              <span>💬</span>
+
+              <div>
+                <strong>WhatsApp</strong>
+                <p><a href="https://wa.me/27763616044" target="_blank" rel="noopener noreferrer">076 361 6044</a></p>
+              </div>
             </div>
           </div>
+        </details>
 
-          <div className="contactItem">
-            <span>📞</span>
+        <details className="panel collapsiblePanel">
+          <summary>Send us a Message</summary>
 
-            <div>
-              <strong>Phone</strong>
-              <p><a href="tel:+27763616044">076 361 6044</a></p>
-            </div>
+          <div className="collapsibleContent">
+            <ContactForm />
           </div>
-
-          <div className="contactItem">
-            <span>💬</span>
-
-            <div>
-              <strong>WhatsApp</strong>
-              <p><a href="https://wa.me/27763616044" target="_blank" rel="noopener noreferrer">076 361 6044</a></p>
-            </div>
-          </div>
-        </div>
-
-        <div className="panel formPanel">
-          <h3>Send us a Message</h3>
-
-          <ContactForm />
-        </div>
+        </details>
       </section>
 
       <Footer />

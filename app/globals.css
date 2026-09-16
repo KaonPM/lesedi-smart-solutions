@@ -150,8 +150,7 @@ a{
   inset:0;
   display:flex;
   align-items:center;
-  justify-content:flex-end;
-  padding-right:34px;
+  justify-content:center;
   pointer-events:none;
 }
 
@@ -161,7 +160,6 @@ a{
   object-fit:contain;
   display:block;
   opacity:0.13;
-  filter:grayscale(1);
 }
 
 /* TRUST STRIP */
@@ -235,12 +233,13 @@ a{
   background:#ffffff;
   border:1px solid #e7efef;
   border-radius:22px;
-  padding:24px;
+  padding:20px;
   box-shadow:0 10px 24px rgba(10,30,40,0.04);
   display:flex;
   flex-direction:column;
   gap:16px;
-  min-height:360px;
+  min-height:330px;
+  transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease;
 }
 
 .card:hover{
@@ -250,9 +249,10 @@ a{
 }
 
 .cardTop{
+  position:relative;
   display:flex;
-  justify-content:space-between;
-  align-items:flex-start;
+  justify-content:center;
+  align-items:center;
   gap:14px;
   margin-bottom:4px;
 }
@@ -264,6 +264,9 @@ a{
   font-size:12px;
   font-weight:700;
   color:#648090;
+  position:absolute;
+  top:0;
+  right:0;
 }
 
 .card h3{
@@ -284,16 +287,30 @@ a{
 }
 
 .productLogo{
-  width:230px;
-  height:80px;
+  width:200px;
+  height:68px;
   object-fit:contain;
-  object-position:left center;
+  object-position:center;
   display:block;
 }
 
 .goqLogo{
-  width:190px;
-  object-position:left center;
+  width:170px;
+}
+
+.goq .cardTop small{
+  background:#f8e8f2;
+  color:#9a1459;
+}
+
+.daily .cardTop small{
+  background:#fce8ef;
+  color:#bc3560;
+}
+
+.wage .cardTop small{
+  background:#e4f4ed;
+  color:#14805e;
 }
 
 /* LOWER GRID */
@@ -315,6 +332,53 @@ a{
 .panel h3{
   font-size:20px;
   margin-bottom:14px;
+}
+
+.collapsiblePanel{
+  padding:0;
+  overflow:hidden;
+}
+
+.collapsiblePanel summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  padding:22px;
+  color:#12304a;
+  cursor:pointer;
+  font-size:20px;
+  font-weight:700;
+  list-style:none;
+}
+
+.collapsiblePanel summary::-webkit-details-marker{
+  display:none;
+}
+
+.collapsiblePanel summary::after{
+  content:"+";
+  width:30px;
+  height:30px;
+  display:grid;
+  place-items:center;
+  border-radius:50%;
+  background:#eafaf9;
+  color:#0aa6bf;
+  font-size:22px;
+  font-weight:400;
+}
+
+.collapsiblePanel[open] summary{
+  border-bottom:1px solid #e7efef;
+}
+
+.collapsiblePanel[open] summary::after{
+  content:"−";
+}
+
+.collapsibleContent{
+  padding:22px;
 }
 
 .panel p{
@@ -665,6 +729,24 @@ button{
   padding:4px 10px;
   border-radius:999px;
   white-space:nowrap;
+}
+
+.goq .referenceChips span{
+  background:#f9e8f2;
+  border-color:#f2cfe1;
+  color:#9a1459;
+}
+
+.daily .referenceChips span{
+  background:#fcebf1;
+  border-color:#f6d4e1;
+  color:#bc3560;
+}
+
+.wage .referenceChips span{
+  background:#e6f5ee;
+  border-color:#cde9dc;
+  color:#14805e;
 }
 
 .referenceCardLink{
