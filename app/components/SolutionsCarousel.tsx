@@ -1,36 +1,50 @@
 "use client";
 
-import { useEffect, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 
 export default function SolutionsCarousel({ children }: { children: React.ReactNode }) {
   const carouselRef = useRef<HTMLDivElement>(null);
   const pausedRef = useRef(false);
+  const movingRef = useRef(false);
 
-  const moveCarousel = (direction: "previous" | "next") => {
+  const moveCarousel = useCallback((direction: "previous" | "next") => {
     const carousel = carouselRef.current;
 
-    if (!carousel) {
+    if (!carousel || movingRef.current) {
       return;
     }
 
     const firstCard = carousel.firstElementChild as HTMLElement | null;
+    const lastCard = carousel.lastElementChild as HTMLElement | null;
+
+    if (!firstCard || !lastCard) {
+      return;
+    }
+
     const gap = Number.parseFloat(getComputedStyle(carousel).gap) || 0;
     const step = (firstCard?.offsetWidth || carousel.clientWidth) + gap;
-    const atStart = carousel.scrollLeft <= 4;
-    const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 4;
+    movingRef.current = true;
 
-    carousel.scrollTo({
-      left:
-        direction === "previous"
-          ? atStart
-            ? carousel.scrollWidth - carousel.clientWidth
-            : carousel.scrollLeft - step
-          : atEnd
-            ? 0
-            : carousel.scrollLeft + step,
-      behavior: "smooth",
-    });
-  };
+    if (direction === "next") {
+      carousel.scrollBy({ left: step, behavior: "smooth" });
+
+      window.setTimeout(() => {
+        carousel.append(firstCard);
+        carousel.scrollTo({ left: carousel.scrollLeft - step, behavior: "auto" });
+        movingRef.current = false;
+      }, 500);
+
+      return;
+    }
+
+    carousel.prepend(lastCard);
+    carousel.scrollTo({ left: step, behavior: "auto" });
+    carousel.scrollTo({ left: 0, behavior: "smooth" });
+
+    window.setTimeout(() => {
+      movingRef.current = false;
+    }, 500);
+  }, []);
 
   useEffect(() => {
     const carousel = carouselRef.current;
@@ -44,19 +58,11 @@ export default function SolutionsCarousel({ children }: { children: React.ReactN
         return;
       }
 
-      const firstCard = carousel.firstElementChild as HTMLElement | null;
-      const gap = Number.parseFloat(getComputedStyle(carousel).gap) || 0;
-      const step = (firstCard?.offsetWidth || carousel.clientWidth) + gap;
-      const atEnd = carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 4;
-
-      carousel.scrollTo({
-        left: atEnd ? 0 : carousel.scrollLeft + step,
-        behavior: "smooth",
-      });
+      moveCarousel("next");
     }, 5000);
 
     return () => window.clearInterval(timer);
-  }, []);
+  }, [moveCarousel]);
 
   return (
     <div className="solutionsCarousel">
