@@ -231,7 +231,45 @@ a{
   padding:4px 4px 16px;
   scroll-snap-type:inline mandatory;
   scrollbar-color:#b7dddf transparent;
-  scrollbar-width:thin;
+  scrollbar-width:none;
+}
+
+.cards::-webkit-scrollbar{
+  display:none;
+}
+
+.solutionsCarousel{
+  position:relative;
+}
+
+.carouselControl{
+  position:absolute;
+  top:50%;
+  z-index:2;
+  width:34px;
+  height:34px;
+  display:grid;
+  place-items:center;
+  border:1px solid #d8eceb;
+  border-radius:50%;
+  background:#fff;
+  box-shadow:0 5px 16px rgba(10,48,74,.14);
+  color:#0aa6bf;
+  cursor:pointer;
+  font-size:28px;
+  line-height:1;
+}
+
+.carouselControl:hover{
+  background:#eafaf9;
+}
+
+.carouselPrevious{
+  left:-13px;
+}
+
+.carouselNext{
+  right:-13px;
 }
 
 .card{
