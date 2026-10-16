@@ -1,6 +1,7 @@
 import Image from "next/image";
 import BottomInfoPanels from "./components/BottomInfoPanels";
 import Footer from "./components/Footer";
+import SolutionsCarousel from "./components/SolutionsCarousel";
 
 export default function Home() {
   return (
@@ -101,7 +102,7 @@ export default function Home() {
           </h2>
         </div>
 
-        <div className="cards">
+        <SolutionsCarousel>
           {/* GOQ FIRST */}
 
           <article className="card goq">
@@ -242,7 +243,7 @@ export default function Home() {
               Visit EduBloom
             </a>
           </article>
-        </div>
+        </SolutionsCarousel>
       </section>
 
       <BottomInfoPanels />
