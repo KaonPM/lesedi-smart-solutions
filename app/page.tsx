@@ -207,6 +207,41 @@ export default function Home() {
               View WageFlow
             </a>
           </article>
+
+          {/* EDUBLOOM FOURTH */}
+
+          <article className="card edubloom">
+            <div className="cardTop">
+              <Image
+                src="/edubloom-logo.png"
+                alt="EduBloom"
+                width={230}
+                height={100}
+                className="productLogo edubloomLogo"
+              />
+
+              <small>Live Solution</small>
+            </div>
+
+            <p>
+              EduBloom helps learners learn, grow and thrive through a focused
+              educational experience.
+            </p>
+
+            <div className="referenceChips">
+              <span>Learning Support</span>
+              <span>Learner Growth</span>
+              <span>Education Tools</span>
+            </div>
+
+            <a
+              href="https://www.edubloom.co.za/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Visit EduBloom
+            </a>
+          </article>
         </div>
       </section>
 

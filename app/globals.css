@@ -225,7 +225,7 @@ a{
 .cards{
   margin-top:28px;
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
   gap:22px;
 }
 
@@ -299,6 +299,13 @@ a{
   margin-left:-18px;
 }
 
+.edubloomLogo{
+  width:200px;
+  height:82px;
+  object-fit:cover;
+  object-position:center 58%;
+}
+
 .goq .cardTop small{
   background:#f8e8f2;
   color:#9a1459;
@@ -312,6 +319,11 @@ a{
 .wage .cardTop small{
   background:#e4f4ed;
   color:#14805e;
+}
+
+.edubloom .cardTop small{
+  background:#fff5dd;
+  color:#aa7200;
 }
 
 /* LOWER GRID */
@@ -747,6 +759,12 @@ button{
   background:#e6f5ee;
   border-color:#cde9dc;
   color:#14805e;
+}
+
+.edubloom .referenceChips span{
+  background:#f5f8df;
+  border-color:#e1e8b9;
+  color:#558d32;
 }
 
 .referenceCardLink{
