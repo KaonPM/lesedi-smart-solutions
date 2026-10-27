@@ -346,6 +346,8 @@ a{
   height:62px;
   object-fit:contain;
   object-position:left center;
+  transform:scale(1.35);
+  transform-origin:left center;
 }
 
 .wageLogo{

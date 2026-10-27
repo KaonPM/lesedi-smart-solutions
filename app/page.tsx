@@ -214,7 +214,7 @@ export default function Home() {
           <article className="card edubloom">
             <div className="cardTop">
               <Image
-                src="/edubloom-logo.png"
+                src="/edubloom-logo-card.png"
                 alt="EduBloom"
                 width={230}
                 height={100}
