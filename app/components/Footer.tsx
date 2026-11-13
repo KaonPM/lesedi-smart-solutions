@@ -25,6 +25,7 @@ export default function Footer() {
               </Link>
             ))}
             <a
+              className="footerManual"
               href="/lesedi-smart-solutions-paia-popia-manual.pdf"
               target="_blank"
               rel="noopener noreferrer"
