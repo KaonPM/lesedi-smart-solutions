@@ -19,18 +19,27 @@ export default function Footer() {
         <div>
           <p className="footerLabel">Legal &amp; Policies</p>
           <nav className="footerLinks" aria-label="Legal policies">
-            {policies.map((policy) => (
-              <Link key={policy.slug} href={`/legal/${policy.slug}`}>
-                {policy.title}
-              </Link>
-            ))}
-            <a
-              href="/lesedi-smart-solutions-paia-popia-manual.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              PAIA &amp; POPIA Manual
-            </a>
+            <div className="footerPolicyColumn">
+              {policies.filter((_, index) => index % 2 === 0).map((policy) => (
+                <Link key={policy.slug} href={`/legal/${policy.slug}`}>
+                  {policy.title}
+                </Link>
+              ))}
+              <a
+                href="/lesedi-smart-solutions-paia-popia-manual.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                PAIA &amp; POPIA Manual
+              </a>
+            </div>
+            <div className="footerPolicyColumn">
+              {policies.filter((_, index) => index % 2 !== 0).map((policy) => (
+                <Link key={policy.slug} href={`/legal/${policy.slug}`}>
+                  {policy.title}
+                </Link>
+              ))}
+            </div>
           </nav>
         </div>
 
