@@ -24,6 +24,13 @@ export default function Footer() {
                 {policy.title}
               </Link>
             ))}
+            <a
+              href="/lesedi-smart-solutions-paia-popia-manual.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              PAIA &amp; POPIA Manual
+            </a>
           </nav>
         </div>
 
